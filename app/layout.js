@@ -6,12 +6,18 @@ export default function RootLayout({ children }) {
     return (
         <html lang="pl">
         <head>
-            {/* Tailwind CSS via CDN */}
-            <Script
-                src="https://cdn.tailwindcss.com"
-                strategy="beforeInteractive"
+            {/* Tailwind CDN */}
+            <Script src="https://cdn.tailwindcss.com" strategy="beforeInteractive"/>
+            {/* Google Fonts */}
+            <link
+                href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+                rel="stylesheet"
             />
+            <style>{`
+    body { font-family: 'Poppins', sans-serif; }
+  `}</style>
         </head>
+
         <body className="bg-gray-50 text-gray-800">
         <header className="bg-green-500 text-white p-4">
             <nav className="container mx-auto flex space-x-6">

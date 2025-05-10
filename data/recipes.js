@@ -3,7 +3,7 @@ export const recipes = [
     {
         id: 'carbonara',
         title: 'Makaron Carbonara',
-        img: '/carbonara.jpg',  // wgraj ten obraz do public/
+        img: '/carbonara.png',  // wgraj ten obraz do public/
         ingredients: ['makaron', 'jajka', 'boczek', 'parmezan'],
         steps: [
             'Ugotuj makaron wg instrukcji.',
@@ -15,7 +15,7 @@ export const recipes = [
     {
         id: 'omlet',
         title: 'Omlet ze szpinakiem',
-        img: '/omelet.jpg',
+        img: '/omlet.jpg',
         ingredients: ['jajka', 'szpinak', 'sól', 'pieprz'],
         steps: [
             'Roztrzep jajka z solą i pieprzem.',

@@ -3,7 +3,7 @@ export default function ContactPage() {
         <div className="max-w-lg mx-auto">
             <h2 className="text-2xl font-semibold mb-4">Kontakt</h2>
             <form
-                action="https://formspree.io/f/yourFormID"
+                action="https://formspree.io/f/mrbqlkgy"
                 method="POST"
                 className="space-y-4"
             >
