@@ -1,4 +1,5 @@
 // app/page.js
+import { Analytics } from '@vercel/analytics/react'
 import FeaturesSection from './components/FeaturesSection'
 import FeatureBlock from './components/FeatureBlock'
 import { featuresList } from '../data/features'
@@ -35,6 +36,9 @@ export default function HomePage() {
                 text="Oblicz swoje BMI, PPM i CPM w kilka sekund."
                 reverse
             />
+
+            {/* Dodaj poniżej komponent Analytics */}
+            <Analytics />
         </>
     )
 }
