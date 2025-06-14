@@ -2,32 +2,38 @@
 export const featuresList = [
     {
         title: 'Baza przepisów',
-        icon: '/icons/recipe-icon.svg',
-        description: 'Przeglądaj gotowe przepisy z prostymi składnikami.'
+        description: 'Przeglądaj proste, szybkie i tanie przepisy!',
+        img: 'recipes.png',
+        href: '/recipes',
     },
     {
-        title: 'Formularz AI',
-        icon: '/icons/ai-icon.svg',
-        description: 'Wpisz to, co masz w kuchni, a zrobimy z tego przepis.'
+        title: 'Asystent AI',
+        description: 'Wpisz to, co masz w kuchni i otrzymaj przepis!',
+        img: 'ai-demo.png',
+        href: '/ai-kitchen',
     },
     {
         title: 'Kalkulatory',
-        icon: '/icons/calculator-icon.svg',
-        description: 'BMI, PPM i CPM w jednym miejscu, obliczenia w locie.'
+        description: 'Sprawdź ile kalorii powinieneś spożywać.',
+        img: 'calculator-demo.png',
+        href: '/calculators',
     },
     {
         title: 'Edukacja żywieniowa',
-        icon: '/icons/education-icon.svg',
-        description: 'Artykuły o zasadach zdrowego żywienia.'
+        description: 'Poznaj zasady zdrowego żywienia.',
+        img: 'education.jpg',
+        href: '/education',
     },
     {
-        title: 'Plan zakupów',
-        icon: '/icons/shopping-icon.svg',
-        description: 'Twórz listy zakupowe zgodnie z planem diety.'
+        title: 'Zamienniki produktów',
+        description: 'Znajduj zamienniki produktów.',
+        img: 'shopping-list.jpg',
+        href: '/substitutes',
     },
     {
         title: 'Kontakt',
-        icon: '/icons/contact-icon.svg',
-        description: 'Masz pytania? Napisz do nas.'
-    }
-]
+        description: 'Masz pytania? Napisz!',
+        img: 'contact.jpg',
+        href: '/contact',
+    },
+];

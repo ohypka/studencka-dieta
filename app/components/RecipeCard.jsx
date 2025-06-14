@@ -15,7 +15,7 @@ export default function RecipeCard({ recipe }) {
             <div className="p-4">
                 <h3 className="text-xl font-semibold">{recipe.title}</h3>
                 <p className="mt-2 text-sm text-gray-600">
-                    Składniki: {recipe.ingredients.join(', ')}
+                    kcal: {recipe.kcal}
                 </p>
             </div>
         </Link>

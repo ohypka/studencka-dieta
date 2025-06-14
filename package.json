@@ -12,9 +12,12 @@
     "@vercel/analytics": "^1.5.0",
     "dotenv": "^16.5.0",
     "framer-motion": "^12.12.1",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^3.0.1",
     "next": "15.3.2",
     "openai": "^4.98.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.57.0"
   }
 }

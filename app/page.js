@@ -1,10 +1,11 @@
 // app/page.js
 'use client'
 
+import Link from 'next/link'
 import { Analytics } from '@vercel/analytics/react'
 import FeaturesSection from './components/FeaturesSection'
 import FeatureBlock from './components/FeatureBlock'
-import { featuresList } from '../data/features'
+import { featuresList } from '@/data/features'
 
 export default function HomePage() {
     return (
@@ -12,7 +13,7 @@ export default function HomePage() {
             {/* Sekcja Hero */}
             <section
                 className="h-screen bg-cover bg-center flex flex-col justify-center items-center text-center px-4 space-y-6"
-                style={{ backgroundImage: "url('/hero-food.jpg')" }}
+                style={{ backgroundImage: "url('/home.jpg')" }}
             >
                 <h1 className="text-6xl font-bold text-white drop-shadow-lg">
                     Twoja Dieta w Zasięgu Ręki
@@ -21,20 +22,65 @@ export default function HomePage() {
                     Zdrowe przepisy, AI-asystent i kalkulatory dietetyczne – wszystko w jednym miejscu.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                    <a
+                    <Link
                         href="/recipes"
                         className="px-8 py-4 rounded-full bg-green-500 text-white font-semibold hover:bg-green-600 transition"
                     >
                         Sprawdź Przepisy
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         href="https://docs.google.com/forms/d/e/1FAIpQLSf3eYVATdHOQbWuzzFvKPwBGw1YvspvqoUoQhQAiWoqJmwLKg/viewform?usp=sharing&ouid=106658456979211610144"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="px-8 py-4 rounded-full bg-blue-500 text-white font-semibold hover:bg-blue-600 transition"
                     >
-                        Wypełnij ankietę ewaluacyjną
-                    </a>
+                        Wypełnij Ankietę Ewaluacyjną
+                    </Link>
+                </div>
+            </section>
+
+            {/* Sekcja O projekcie */}
+            <section className="py-16 bg-gray-50">
+                <div className="container mx-auto px-4">
+                    <div className="bg-white rounded-2xl shadow-lg overflow-hidden grid lg:grid-cols-2 gap-8">
+                        <div className="h-64 lg:h-auto">
+                            <img
+                                src="/project-hero.jpg"
+                                alt="Studencka Dieta"
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div className="p-8 flex flex-col justify-center space-y-6">
+                            <h2 className="text-4xl font-extrabold text-gray-800">
+                                O projekcie <span className="text-green-600">Studencka Dieta</span>
+                            </h2>
+                            <p className="text-lg text-gray-700">
+                                Strona ta została utworzona w ramach projektu społecznego przez studentkę dietetyki
+                                na Uniwersytecie Vizja w Warszawie. Inicjatywa ta ma na celu wspieranie studentów w organizacji
+                                tanich, szybkich i zdrowych posiłków oraz w poprawie nawyków żywieniowych.
+                            </p>
+                            <p className="text-lg text-gray-700">Platforma oferuje:</p>
+                            <ul className="list-disc list-inside space-y-2 text-gray-700">
+                                <li>Łatwe i tanie przepisy z wartościami odżywczymi</li>
+                                <li>AI-asystenta generującego przepisy na podstawie składników</li>
+                                <li>Praktyczne kalkulatory dietetyczne (BMI, PPM, CPM)</li>
+                            </ul>
+
+                            {/* Dwa logotypy PNG */}
+                            <div className="flex items-center space-x-8 mt-6">
+                                <img
+                                    src="/logo_vizja.png"
+                                    alt="Logo Uniwersytetu Vizja"
+                                    className="h-24 object-contain"
+                                />
+                                <img
+                                    src="/logo_projekty.png"
+                                    alt="Logo projektów studenckich"
+                                    className="h-24 object-contain"
+                                />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -42,18 +88,34 @@ export default function HomePage() {
             <FeaturesSection features={featuresList} />
 
             {/* Bloki funkcji */}
-            <FeatureBlock
-                img="/ai-demo.jpg"
-                title="AI-asystent kuchenny"
-                text="Wpisz składniki, a my wygenerujemy przepis."
-            />
+            <div className="container mx-auto my-12 grid grid-cols-1 sm:grid-cols-2 gap-8 px-4">
+                <FeatureBlock
+                    img="/ai-demo.png"
+                    title="AI-asystent kuchenny"
+                    text="Wpisz składniki, a my wygenerujemy przepis."
+                >
+                    <Link
+                        href="/ai-kitchen"
+                        className="px-6 py-3 bg-green-500 text-white rounded-full font-medium hover:bg-green-600 transition inline-block"
+                    >
+                        Przejdź do AI-asystenta
+                    </Link>
+                </FeatureBlock>
 
-            <FeatureBlock
-                img="/calculator-demo.jpg"
-                title="Kalkulatory dietetyczne"
-                text="Oblicz swoje BMI, PPM i CPM w kilka sekund."
-                reverse
-            />
+                <FeatureBlock
+                    img="/calculator-demo.png"
+                    title="Kalkulatory dietetyczne"
+                    text="Oblicz swoje BMI, PPM i CPM w kilka sekund."
+                    reverse
+                >
+                    <Link
+                        href="/calculators"
+                        className="px-6 py-3 bg-green-500 text-white rounded-full font-medium hover:bg-green-600 transition inline-block"
+                    >
+                        Przejdź do Kalkulatorów
+                    </Link>
+                </FeatureBlock>
+            </div>
 
             {/* Vercel Analytics */}
             <Analytics />
