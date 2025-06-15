@@ -7,6 +7,7 @@ export default function FeaturesSection({ features }) {
         text
             .replace(/ w /g, ' w\u00A0')
             .replace(/ i /g, ' i\u00A0')
+            .replace(/ my /g, ' my\u00A0')
             .replace(/ na /g, ' na\u00A0');
 
     return (

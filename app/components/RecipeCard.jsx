@@ -1,11 +1,11 @@
 // app/components/RecipeCard.jsx
-import Link from 'next/link';
+import Link from 'next/link'
 
 export default function RecipeCard({ recipe }) {
     return (
         <Link
             href={`/recipes/${recipe.id}`}
-            className="block border rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
+            className="block bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition"
         >
             <img
                 src={recipe.img}
@@ -14,10 +14,8 @@ export default function RecipeCard({ recipe }) {
             />
             <div className="p-4">
                 <h3 className="text-xl font-semibold">{recipe.title}</h3>
-                <p className="mt-2 text-sm text-gray-600">
-                    kcal: {recipe.kcal}
-                </p>
+                <p className="mt-1 text-sm text-gray-600">~{recipe.kcal} kcal</p>
             </div>
         </Link>
-    );
+    )
 }
