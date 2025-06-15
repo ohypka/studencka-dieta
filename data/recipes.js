@@ -710,7 +710,7 @@ export const recipes = [
     {
         id: 'kanapka-awokado',
         title: 'Pełnoziarnista kanapka z awokado',
-        img: '/default.png',
+        img: '/kanapka-awokado.png',
         kcal: 220,
         ingredients: [
             '1 kromka chleba pełnoziarnistego',
@@ -738,7 +738,7 @@ export const recipes = [
     {
         id: 'jogurt-miod-orzechy',
         title: 'Jogurt grecki z miodem i orzechami',
-        img: '/default.png',
+        img: '/jogurt-miod-orzechy.png',
         kcal: 200,
         ingredients: [
             '150 g jogurtu greckiego',
@@ -765,7 +765,7 @@ export const recipes = [
     {
         id: 'mini-wrap-hummus',
         title: 'Mini wrap z hummusem i marchewką',
-        img: '/default.png',
+        img: '/mini-wrap-hummus.png',
         kcal: 180,
         ingredients: [
             '1 mini tortilla pełnoziarnista',
@@ -792,7 +792,7 @@ export const recipes = [
     {
         id: 'placuszki-jaglane',
         title: 'Placuszki jaglane z owocami',
-        img: '/default.png',
+        img: '/placuszki-jaglane.png',
         kcal: 240,
         ingredients: [
             '30 g suchej kaszy jaglanej (2 łyżki)',
@@ -821,7 +821,7 @@ export const recipes = [
     {
         id: 'budyn-chia-kakao',
         title: 'Mini budyń chia z kakao',
-        img: '/default.png',
+        img: '/budyn-chia-kakao.png',
         kcal: 200,
         ingredients: [
             '2 łyżki nasion chia (ok. 30 g)',
@@ -852,7 +852,7 @@ export const recipes = [
     {
         id: 'omlet-szpinak-pomidor',
         title: 'Omlet ze szpinakiem i pomidorem',
-        img: '/default.png',
+        img: '/omlet-szpinak-pomidor.png',
         kcal: 330,
         ingredients: [
             '2 jajka',
@@ -884,7 +884,7 @@ export const recipes = [
     {
         id: 'salatka-quinoa-ciepla',
         title: 'Ciepła sałatka z komosą i warzywami',
-        img: '/default.png',
+        img: '/salatka-quinoa-ciepla.png',
         kcal: 400,
         ingredients: [
             '70 g komosy ryżowej (quinoa)',
@@ -916,7 +916,7 @@ export const recipes = [
     {
         id: 'gulasz-soczewica-warzywa',
         title: 'Gulasz z soczewicą i warzywami',
-        img: '/default.png',
+        img: '/gulasz-soczewica-warzywa.png',
         kcal: 450,
         ingredients: [
             '100 g czerwonej lub zielonej soczewicy (suchej)',
@@ -951,7 +951,7 @@ export const recipes = [
     {
         id: 'tortilla-kurczak-warzywa',
         title: 'Tortilla z kurczakiem i warzywami',
-        img: '/default.png',
+        img: '/tortilla-kurczak-warzywa.png',
         kcal: 450,
         ingredients: [
             '1 pełnoziarnista tortilla',
@@ -983,7 +983,7 @@ export const recipes = [
     {
         id: 'salatka-tunczyk-warzywa',
         title: 'Sałatka z tuńczykiem i warzywami',
-        img: '/default.png',
+        img: '/salatka-tunczyk-warzywa.png',
         kcal: 380,
         ingredients: [
             '1 puszka tuńczyka w sosie własnym (ok. 120 g)',
