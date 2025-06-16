@@ -2,19 +2,19 @@
 export const featuresList = [
     {
         title: 'Baza przepisów',
-        description: 'Przeglądaj proste, szybkie i tanie przepisy!',
+        description: 'Przeglądaj proste, szybkie i\u00A0tanie przepisy!',
         img: 'recipes.png',
         href: '/recipes',
     },
     {
         title: 'Asystent AI',
-        description: 'Wpisz to, co masz w kuchni i otrzymaj przepis!',
+        description: 'Wpisz to, co\u00A0masz w\u00A0kuchni i\u00A0otrzymaj przepis!',
         img: 'ai-demo.png',
         href: '/ai-kitchen',
     },
     {
         title: 'Kalkulatory',
-        description: 'Sprawdź ile kalorii powinieneś spożywać.',
+        description: 'Sprawdź ile\u00A0kalorii powinieneś spożywać.',
         img: 'calculator-demo.png',
         href: '/calculators',
     },

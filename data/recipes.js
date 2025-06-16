@@ -3,7 +3,7 @@ export const recipes =
     [
         {
             id: 'tortilla-jajko',
-            title: 'Tortilla z jajkiem i warzywami',
+            title: 'Tortilla z\u00A0jajkiem i\u00A0warzywami',
             img: '/tortilla-jajko.png',
             kcal: 335,
             protein_g: 13,
@@ -11,26 +11,26 @@ export const recipes =
             carbs_g: 30,
             ingredients: [
                 '1x tortilla pełnoziarnista',
-                '1 jajko (ugotowane na twardo)',
+                '1 jajko (ugotowane na\u00A0twardo)',
                 '2 łyżki serka śmietankowego',
-                'kilka plasterków pomidora lub papryki',
+                'kilka plasterków pomidora lub\u00A0papryki',
                 'garść rukoli',
-                'sól, pieprz do smaku'
+                'sól, pieprz do\u00A0smaku'
             ],
             shoppingList: [
                 'tortilla pełnoziarnista',
                 'jajka',
                 'serek śmietankowy',
-                '1 pomidor lub 1 papryka',
+                '1 pomidor lub 1 papryka',
                 'opakowanie rukoli',
                 'sól, pieprz'
             ],
             steps: [
-                'Ugotuj jajko na twardo (ok. 9 min), ostudź, obierz i pokrój w plasterki.',
-                'Rozłóż tortillę i posmaruj ją cienko serkiem śmietankowym.',
-                'Na środku ułóż rukolę, plasterki jajka i warzywa.',
-                'Dopraw całość solą i pieprzem.',
-                'Zwiń tortillę w rulon, przetnij na pół i zapakuj.'
+                'Ugotuj jajko na twardo (ok.\u00A09\u00A0 min), ostudź, obierz i\u00A0pokrój w\u00A0plasterki.',
+                'Rozłóż tortillę i\u00A0posmaruj ją cienko serkiem śmietankowym.',
+                'Na\u00A0środku ułóż rukolę, plasterki jajka i\u00A0warzywa.',
+                'Dopraw całość solą i\u00A0pieprzem.',
+                'Zwiń tortillę w\u00A0rulon, przetnij na\u00A0pół i\u00A0zapakuj.'
             ],
             zamienniki: {
                 'tortilla pełnoziarnista': ['liść sałaty rzymskiej', 'lawasz'],
@@ -49,15 +49,15 @@ export const recipes =
             fat_g: 8,
             carbs_g: 58,
             ingredients: [
-                '5 łyżek płatków owsianych (50 g)',
-                '150 ml mleka (krowie lub roślinne)',
+                '5 łyżek płatków owsianych (50\u00A0 g)',
+                '150 ml mleka (krowie lub roślinne)',
                 '1/2 banana',
                 '1 łyżka jogurtu naturalnego',
                 '1 łyżeczka nasion chia',
                 'opcjonalnie cynamon, orzechy, owoce'
             ],
             shoppingList: [
-                'opakowanie płatków owsianych',
+                'opakowanie płatków owsianych',
                 'mleko',
                 '1 banan',
                 'jogurt naturalny',
@@ -65,11 +65,11 @@ export const recipes =
                 'cynamon, orzechy włoskie, owoce sezonowe'
             ],
             steps: [
-                'Do słoika wsyp płatki owsiane i nasiona chia.',
-                'Dodaj jogurt, mleko i rozgniecionego banana.',
-                'Dodaj szczyptę cynamonu, zamknij i wymieszaj.',
-                'Wstaw do lodówki na całą noc (min. 6–8 h).',
-                'Rano przed podaniem możesz dodać świeże owoce lub orzechy.'
+                'Do słoika wsyp płatki owsiane i\u00A0nasiona chia.',
+                'Dodaj jogurt, mleko i\u00A0rozgniecionego banana.',
+                'Dodaj szczyptę cynamonu, zamknij i\u00A0wymieszaj.',
+                'Wstaw do\u00A0lodówki na\u00A0całą noc (min.\u00A06–8 h).',
+                'Rano przed podaniem możesz dodać świeże owoce lub\u00A0orzechy.'
             ],
             zamienniki: {
                 'płatki owsiane': ['płatki jaglane', 'musli niesłodzone', 'płatki żytnie'],
@@ -82,22 +82,22 @@ export const recipes =
 
         {
             id: 'wrap-twarozek',
-            title: 'Mini wrapy z twarożkiem i rzodkiewką',
+            title: 'Mini wrapy z\u00A0twarożkiem i\u00A0rzodkiewką',
             img: '/wrap-twarozek.png',
             kcal: 265,
             protein_g: 11,
             fat_g: 7,
             carbs_g: 38,
             ingredients: [
-                '3 łyżki twarożku lub serka wiejskiego',
+                '3 łyżki twarożku lub serka wiejskiego',
                 '1 łyżka jogurtu naturalnego',
-                '3 rzodkiewki pokrojone w plasterki',
+                '3 rzodkiewki pokrojone w plasterki',
                 'szczypiorek do smaku',
                 '1 tortilla pełnoziarnista',
                 'sól, pieprz'
             ],
             shoppingList: [
-                'twaróg półtłusty lub serek wiejski',
+                'twaróg półtłusty lub serek wiejski',
                 'jogurt naturalny',
                 'rzodkiewki',
                 'szczypiorek',
@@ -106,16 +106,16 @@ export const recipes =
                 'sól, pieprz'
             ],
             steps: [
-                'W miseczce wymieszaj twarożek z jogurtem, solą, pieprzem i drobno posiekanym szczypiorkiem.',
-                'Rzodkiewki pokrój w cienkie plasterki.',
-                'Na tortillę rozłóź liście sałaty i rozsmaruj pastę twarogową.',
-                'Nałóż rzodkiewki, zwiń całość w rulon.',
-                'Przetnij na pół i zapakuj do lunchboxa.'
+                'W miseczce wymieszaj twarożek z\u00A0jogurtem, solą, pieprzem i\u00A0drobno posiekanym szczypiorkiem.',
+                'Rzodkiewki pokrój w\u00A0cienkie plasterki.',
+                'Na\u00A0tortillę rozłóź liście sałaty i\u00A0rozsmaruj pastę twarogową.',
+                'Nałóż rzodkiewki, zwiń całość w\u00A0rulon.',
+                'Przetnij na\u00A0pół i\u00A0zapakuj do\u00A0lunchboxa.'
             ],
             zamienniki: {
                 'twaróg': ['serek wiejski', 'serek kremowy light', 'feta pokruszona'],
                 'jogurt': ['kefir', 'majonez light', 'jogurt roślinny'],
-                'rzodkiewki': ['ogórek', 'papryka', 'marchewka pokrojona w słupki'],
+                'rzodkiewki': ['ogórek', 'papryka', 'marchewka pokrojona w słupki'],
                 'szczypiorek': ['koperek', 'cebula dymka', 'natka pietruszki']
             }
         },
@@ -131,26 +131,26 @@ export const recipes =
             ingredients: [
                 '1 duży dojrzały banan',
                 '1 jajko',
-                '2 łyżki płatków owsianych',
+                '2 łyżki płatków owsianych',
                 '1 łyżeczka oliwy do smażenia'
             ],
             shoppingList: [
                 'dojrzały banan',
                 'jajka',
                 'płatki owsiane',
-                'oliwa z oliwek do smażenia'
+                'oliwa z oliwek do smażenia'
             ],
             steps: [
-                'Banana rozgnieć widelcem lub zmiksuj razem z jajkiem i płatkami.',
-                'Rozgrzej patelnię z niewielką ilością oliwy.',
-                'Nakładaj łyżką małe placuszki (średnica 6–7 cm).',
-                'Smaż po ok. 1,5 minuty z każdej strony na złoty kolor.',
-                'Ostudzone przechowuj w pudełku.'
+                'Banana rozgnieć widelcem lub\u00A0zmiksuj razem z\u00A0jajkiem i\u00A0płatkami.',
+                'Rozgrzej patelnię z\u00A0niewielką ilością oliwy.',
+                'Nakładaj łyżką małe placuszki (średnica 6–7\u00A0 cm).',
+                'Smaż po\u00A0ok.\u00A01,5\u00A0minuty z\u00A0każdej strony na\u00A0złoty kolor.',
+                'Ostudzone przechowuj w\u00A0pudełku.'
             ],
             zamienniki: {
-                'banan': ['gruszka', 'puree z dyni', 'marchewka tarta'],
+                'banan': ['gruszka', 'puree z dyni', 'marchewka tarta'],
                 'płatki owsiane': ['kasza manna', 'mąka kokosowa', 'mąka owsiana'],
-                'oliwa z oliwek': ['olej kokosowy', 'smażenie bez tłuszczu na nieprzywierającej patelni']
+                'oliwa z oliwek': ['olej kokosowy', 'smażenie bez tłuszczu na nieprzywierającej patelni']
             }
         },
 
@@ -164,7 +164,7 @@ export const recipes =
             carbs_g: 9,
             ingredients: [
                 '3 jajka',
-                'pół papryki pokrojonej w kostkę',
+                'pół papryki pokrojonej w kostkę',
                 '2 plasterki szynki drobiowej',
                 '1 łyżka mleka',
                 'sól, pieprz, dowolne zioła (np. bazylia)'
@@ -177,12 +177,12 @@ export const recipes =
                 'sól, pieprz, ulubione zioła'
             ],
             steps: [
-                'Rozgrzej piekarnik do 180°C.',
-                'W miseczce roztrzep jajka z mlekiem, solą, pieprzem i ziołami.',
-                'Paprykę i szynkę pokrój w drobną kostkę.',
-                'Do foremek na muffinki wlej mieszankę – ok. 2/3 wysokości.',
-                'Piecz przez 15 minut, aż jajka się zetną i lekko zarumienią.',
-                'Ostudź i przełóż do pojemników lub zjedz od razu.'
+                'Rozgrzej piekarnik do\u00A0180°C.',
+                'W\u00A0miseczce roztrzep jajka z\u00A0mlekiem, solą, pieprzem i\u00A0ziołami.',
+                'Paprykę i\u00A0szynkę pokrój w\u00A0drobną kostkę.',
+                'Do\u00A0foremek na\u00A0muffinki wlej mieszankę – ok.\u00A02/3\u00A0wysokości.',
+                'Piecz przez\u00A015\u00A0minut, aż\u00A0jajka się\u00A0zetną i\u00A0lekko zarumienią.',
+                'Ostudź i\u00A0przełóż do\u00A0pojemników lub\u00A0zjedz od\u00A0razu.'
             ],
             zamienniki: {
                 'szynka drobiowa': ['tofu'],
@@ -193,36 +193,36 @@ export const recipes =
 
         {
             id: 'kanapka-tunczyk',
-            title: 'Kanapka z pastą z tuńczyka i jajka',
+            title: 'Kanapka z\u00A0pastą z\u00A0tuńczyka i\u00A0jajka',
             img: '/kanapka-tunczyk.png',
             kcal: 300,
             protein_g: 29,
             fat_g: 7,
             carbs_g: 31,
             ingredients: [
-                'pół puszki tuńczyka w sosie własnym (ok. 70 g)',
-                '1 jajko ugotowane na twardo',
-                '1 łyżka jogurtu naturalnego lub majonezu light',
+                'pół puszki tuńczyka w sosie własnym (ok. 70 g)',
+                '1 jajko ugotowane na twardo',
+                '1 łyżka jogurtu naturalnego lub majonezu light',
                 '2 kromki pieczywa (pełnoziarniste)',
                 'szczypiorek, sól, pieprz'
             ],
             shoppingList: [
-                'tuńczyk w sosie własnym',
+                'tuńczyk w sosie własnym',
                 'jajka',
-                'jogurt naturalny lub majonez light',
+                'jogurt naturalny lub majonez light',
                 'chleb pełnoziarnisty',
                 'pęczek szczypiorku',
                 'sól, pieprz'
             ],
             steps: [
-                'Odsącz tuńczyka i rozdrobnij widelcem.',
-                'Pokrój ugotowane jajko i dodaj do tuńczyka.',
-                'Dodaj jogurt/majonez, posiekany szczypiorek, sól i pieprz; dobrze wymieszaj.',
+                'Odsącz tuńczyka i\u00A0rozdrobnij widelcem.',
+                'Pokrój ugotowane jajko i\u00A0dodaj do\u00A0tuńczyka.',
+                'Dodaj jogurt/majonez, posiekany szczypiorek, sól i\u00A0pieprz; dobrze wymieszaj.',
                 'Posmaruj pastą kromki pieczywa, złóż kanapkę.',
-                'Spakuj do lunchboxa – dobrze trzyma świeżość kilka godzin.'
+                'Spakuj do\u00A0lunchboxa – dobrze trzyma świeżość kilka godzin.'
             ],
             zamienniki: {
-                'tuńczyk': ['makrela z puszki', 'soczewica ugotowana', 'kurczak z poprzedniego obiadu'],
+                'tuńczyk': ['makrela z puszki', 'soczewica ugotowana', 'kurczak z poprzedniego obiadu'],
                 'jogurt/majonez': ['hummus', 'awokado'],
                 'chleb': ['tortilla', 'bułka grahamka', 'chleb żytni']
             }
@@ -230,43 +230,43 @@ export const recipes =
 
         {
             id: 'salatka-makaronowa',
-            title: 'Sałatka makaronowa z warzywami',
+            title: 'Sałatka makaronowa z\u00A0warzywami',
             img: '/salatka-makaronowa.png',
             kcal: 280,
             protein_g: 10,
             fat_g: 1,
             carbs_g: 56,
             ingredients: [
-                '60 g makaronu (ugotowanego)',
-                'pół papryki pokrojonej w kostkę',
-                'pół ogórka pokrojonego w plastry',
-                '1 łyżka keczupu lub jogurtu naturalnego',
+                '60 g makaronu (ugotowanego)',
+                'pół papryki pokrojonej w kostkę',
+                'pół ogórka pokrojonego w plastry',
+                '1 łyżka keczupu lub jogurtu naturalnego',
                 'sól, pieprz'
             ],
             shoppingList: [
                 'opakowanie makaronu (np. świderki)',
                 '1 papryka',
                 '1 ogórek',
-                'keczup lub jogurt naturalny',
+                'keczup lub jogurt naturalny',
                 'sól, pieprz'
             ],
             steps: [
-                'Ugotuj makaron al dente zgodnie z instrukcją; ostudź.',
-                'Pokrój paprykę i ogórka.',
-                'W dużej misce wymieszaj makaron z warzywami.',
-                'Dodaj keczup lub jogurt, przypraw solą i pieprzem, dobrze wymieszaj.',
-                'Zapakuj do pudełka – smakuje dobrze na zimno lub w temperaturze pokojowej.'
+                'Ugotuj makaron al\u00A0dente zgodnie z\u00A0instrukcją; ostudź.',
+                'Pokrój paprykę i\u00A0ogórka.',
+                'W\u00A0dużej misce wymieszaj makaron z\u00A0warzywami.',
+                'Dodaj keczup lub\u00A0jogurt, przypraw solą i\u00A0pieprzem, dobrze wymieszaj.',
+                'Zapakuj do\u00A0pudełka –\u00A0smakuje dobrze na\u00A0zimno lub\u00A0w\u00A0temperaturze pokojowej.'
             ],
             zamienniki: {
-                'makaron': ['kasza kuskus', 'ryż biały lub brązowy', 'kasza jaglana'],
-                'papryka': ['marchewka starta', 'kukurydza z puszki'],
-                'keczup/jogurt': ['majonez light', 'sos winegret', 'oliwa z oliwek']
+                'makaron': ['kasza kuskus', 'ryż biały lub brązowy', 'kasza jaglana'],
+                'papryka': ['marchewka starta', 'kukurydza z puszki'],
+                'keczup/jogurt': ['majonez light', 'sos winegret', 'oliwa z oliwek']
             }
         },
 
         {
             id: 'wrap-hummus',
-            title: 'Wrap z hummusem i ogórkiem',
+            title: 'Wrap z\u00A0hummusem i\u00A0ogórkiem',
             img: '/wrap-hummus.png',
             kcal: 250,
             protein_g: 8,
@@ -275,52 +275,52 @@ export const recipes =
             ingredients: [
                 '1 pełnoziarnista tortilla',
                 '2 łyżki hummusu',
-                'kilka pasków ogórka',
-                'szczypiorek lub plasterki rzodkiewki'
+                'kilka pasków ogórka',
+                'szczypiorek lub plasterki rzodkiewki'
             ],
             shoppingList: [
                 'opakowanie tortilli pełnoziarnistych',
                 'hummus',
                 'ogórek',
-                'pęczek szczypiorku lub opakowanie rzodkiewek'
+                'pęczek szczypiorku lub opakowanie rzodkiewek'
             ],
             steps: [
-                'Rozłóż tortillę i posmaruj hummusem.',
-                'Na środku ułóż paski ogórka i posyp drobno pokrojonym szczypiorkiem lub rzodkiewką.',
-                'Zwiń tortillę ciasno w rulon i przetnij na pół.',
-                'Zapakuj do pudełka – sprawdza się na wynos:).'
+                'Rozłóż tortillę i\u00A0posmaruj hummusem.',
+                'Na\u00A0środku ułóż paski ogórka i\u00A0posyp drobno pokrojonym szczypiorkiem lub\u00A0rzodkiewką.',
+                'Zwiń tortillę ciasno w\u00A0rulon i\u00A0przetnij na\u00A0pół.',
+                'Zapakuj do\u00A0pudełka –\u00A0sprawdza się na\u00A0wynos:).'
             ],
             zamienniki: {
                 'tortilla': ['liść sałaty', 'lawasz'],
-                'hummus': ['serek kanapkowy', 'pasta z awokado', 'twarożek', 'serek wiejski'],
+                'hummus': ['serek kanapkowy', 'pasta z awokado', 'twarożek', 'serek wiejski'],
                 'ogórek': ['papryka', 'marchewka', 'rzodkiewki']
             }
         },
 
         {
             id: 'jogurt-musli',
-            title: 'Jogurt z owocami i musli',
+            title: 'Jogurt z owocami i\u00A0musli',
             img: '/jogurt-musli.png',
             kcal: 220,
             protein_g: 8,
             fat_g: 7,
             carbs_g: 30,
             ingredients: [
-                '150 g jogurtu naturalnego',
+                '150 g jogurtu naturalnego',
                 'porcja musli bez cukru',
-                '50 g świeżych lub mrożonych owoców',
-                '1 łyżka orzechów lub rodzynek'
+                '50 g świeżych lub mrożonych owoców',
+                '1 łyżka orzechów lub rodzynek'
             ],
             shoppingList: [
                 'duże opakowanie jogurtu naturalnego',
                 'musli bez dodatku cukru',
-                'opakowanie owoców (np. truskawki, jagody)',
-                'orzechy włoskie lub migdały'
+                'opakowanie owoców (np. truskawki, jagody)',
+                'orzechy włoskie lub migdały'
             ],
             steps: [
-                'Do miseczki lub pojemnika włóż jogurt.',
-                'Dodaj owoce i posyp od góry musli oraz orzechami/rodzynkami.',
-                'Jeśli trzeba, przykryj pokrywką lub folią i schowaj do lodówki lub zjedz od razu.'
+                'Do miseczki lub\u00A0pojemnika włóż jogurt.',
+                'Dodaj owoce i\u00A0posyp od\u00A0 góry musli oraz\u00A0orzechami/rodzynkami.',
+                'Jeśli trzeba, przykryj pokrywką lub\u00A0folią i\u00A0schowaj do\u00A0lodówki lub\u00A0zjedz od\u00A0razu.'
             ],
             zamienniki: {
                 'jogurt': ['kefir', 'maślanka', 'jogurt roślinny'],
@@ -331,7 +331,7 @@ export const recipes =
 
         {
             id: 'tortilla-fasola',
-            title: 'Mini tortille z pastą z fasoli i warzywami',
+            title: 'Mini tortille z pastą z fasoli i warzywami',
             img: '/tortilla-fasola.png',
             kcal: 320,
             protein_g: 10,
@@ -339,27 +339,27 @@ export const recipes =
             carbs_g: 55,
             ingredients: [
                 '2 mini tortille pełnoziarniste',
-                '3 łyżki pasty z czarnej fasoli',
-                '2 łyżki kukurydzy z puszki',
-                'papryka lub pomidor pokrojone',
-                'kilka liści sałaty lub koperku'
+                '3 łyżki pasty z czarnej fasoli',
+                '2 łyżki kukurydzy z puszki',
+                'papryka lub pomidor pokrojone',
+                'kilka liści sałaty lub koperku'
             ],
             shoppingList: [
                 'mini tortille pełnoziarniste',
-                'puszka czarnej fasoli lub gotowa pasta',
+                'puszka czarnej fasoli lub gotowa pasta',
                 'puszka kukurydzy',
-                '1 papryka lub pomidor',
-                'sałata lub pęczek koperku'
+                '1 papryka lub pomidor',
+                'sałata lub pęczek koperku'
             ],
             steps: [
-                'Podgrzej tortille przez ok. 20 s na suchej patelni lub w mikrofalówce.',
-                'Na każdą tortillę nałóż pastę z fasoli.',
-                'Dodaj kukurydzę, pokrojone warzywa i liście sałaty.',
-                'Zwiń w rulon, przetnij na pół i zapakuj do pudełka.'
+                'Podgrzej tortille przez ok. 20 s na suchej patelni lub w mikrofalówce.',
+                'Na każdą tortillę nałóż pastę z fasoli.',
+                'Dodaj kukurydzę, pokrojone warzywa i liście sałaty.',
+                'Zwiń w rulon, przetnij na pół i zapakuj do pudełka.'
             ],
             zamienniki: {
                 'mini tortille': ['liście sałaty', 'bułka grahamka'],
-                'pasta z fasoli': ['hummus', 'guacamole', 'pasta z soczewicy'],
+                'pasta z fasoli': ['hummus', 'guacamole', 'pasta z soczewicy'],
                 'kukurydza': ['groszek', 'marchewka gotowana', 'fasolka szparagowa'],
                 'papryka/pomidor': ['ogórek', 'rzodkiewka']
             }
@@ -367,16 +367,16 @@ export const recipes =
 
         {
             id: 'meksykanski-bowl',
-            title: 'Meksykański bowl z ryżem i fasolą',
+            title: 'Meksykański bowl z ryżem i fasolą',
             img: '/meksykanski-bowl.png',
             kcal: 450,
             protein_g: 14,
             fat_g: 3,
             carbs_g: 92,
             ingredients: [
-                '80 g ryżu brązowego (surowego)',
-                '100 g fasoli z puszki (odsączonej)',
-                '50 g kukurydzy z puszki',
+                '80 g ryżu brązowego (surowego)',
+                '100 g fasoli z puszki (odsączonej)',
+                '50 g kukurydzy z puszki',
                 'pół pomidora pokrojonego',
                 'pół łyżeczki kminu rzymskiego',
                 'pół łyżeczki słodkiej papryki',
@@ -384,7 +384,7 @@ export const recipes =
                 'opcjonalnie: kolendra'
             ],
             shoppingList: [
-                'ryż brązowy 500 g',
+                'ryż brązowy 500 g',
                 '2 puszki fasoli',
                 '1 puszka kukurydzy',
                 '1 pomidor',
@@ -392,11 +392,11 @@ export const recipes =
                 'kolendra (opakowanie)'
             ],
             steps: [
-                'Ugotuj ryż zgodnie z instrukcją i odstaw do ostudzenia.',
-                'W misce wymieszaj ryż, fasolę, kukurydzę i pokrojonego pomidora.',
-                'Dopraw kminem, papryką, solą i pieprzem.',
+                'Ugotuj ryż zgodnie z instrukcją i odstaw do ostudzenia.',
+                'W misce wymieszaj ryż, fasolę, kukurydzę i pokrojonego pomidora.',
+                'Dopraw kminem, papryką, solą i pieprzem.',
                 'Jeśli lubisz – dodaj świeżą kolendrę.',
-                'Zapakuj do pudełka – smakuje zimna lub lekko podgrzana.'
+                'Zapakuj do pudełka – smakuje zimna lub lekko podgrzana.'
             ],
             zamienniki: {
                 'ryż': ['kasza jaglana', 'quinoa', 'kuskus'],
@@ -408,23 +408,23 @@ export const recipes =
 
         {
             id: 'kurczak-kasza-brokul',
-            title: 'Kurczak z warzywami i kaszą pęczak',
+            title: 'Kurczak z warzywami i kaszą pęczak',
             img: '/kurczak-kasza-brokul.png',
             kcal: 500,
             protein_g: 47,
             fat_g: 12,
             carbs_g: 51,
             ingredients: [
-                '120 g piersi z kurczaka',
-                '70 g kaszy pęczak (suchej)',
-                '100 g brokuła',
+                '120 g piersi z kurczaka',
+                '70 g kaszy pęczak (suchej)',
+                '100 g brokuła',
                 '1 marchewka',
                 '1 ząbek czosnku',
-                '1 łyżeczka oliwy z oliwek',
+                '1 łyżeczka oliwy z oliwek',
                 'sól, pieprz do smaku'
             ],
             shoppingList: [
-                'pierś z kurczaka 400 g',
+                'pierś z kurczaka 400 g',
                 'kasza pęczak opakowanie',
                 '1 brokuł',
                 '2 marchewki',
@@ -433,11 +433,11 @@ export const recipes =
                 'przyprawy'
             ],
             steps: [
-                'Ugotuj kaszę pęczak zgodnie z instrukcją.',
-                'Kurczaka pokrój na paski, przypraw solą i pieprzem.',
-                'Na patelni rozgrzej oliwę, podsmaż czosnek, następnie kurczaka (5–7 min).',
-                'Dodaj pokrojoną marchewkę i brokuły, smaż kilka minut.',
-                'Połącz wszystko z kaszą i zapakuj po ostudzeniu.'
+                'Ugotuj kaszę pęczak zgodnie z instrukcją.',
+                'Kurczaka pokrój na paski, przypraw solą i pieprzem.',
+                'Na patelni rozgrzej oliwę, podsmaż czosnek, następnie kurczaka (5–7 min).',
+                'Dodaj pokrojoną marchewkę i brokuły, smaż kilka minut.',
+                'Połącz wszystko z kaszą i zapakuj po ostudzeniu.'
             ],
             zamienniki: {
                 'kurczak': ['indyk', 'tofu', 'cieciorka'],
@@ -448,20 +448,20 @@ export const recipes =
 
         {
             id: 'zupa-krem-batat',
-            title: 'Zupa krem z batata i marchewki',
+            title: 'Zupa krem z batata i marchewki',
             img: '/zupa-krem-batat.png',
             kcal: 300,
             protein_g: 4,
             fat_g: 6,
             carbs_g: 58,
             ingredients: [
-                '200 g batata',
-                '100 g marchewki',
+                '200 g batata',
+                '100 g marchewki',
                 'pół cebuli',
-                '500 ml bulionu warzywnego',
+                '500 ml bulionu warzywnego',
                 '1 łyżka oliwy',
-                'świeży imbir 1 cm kawałek',
-                'sól i pieprz do smaku'
+                'świeży imbir 1 cm kawałek',
+                'sól i pieprz do smaku'
             ],
             shoppingList: [
                 '1 batat',
@@ -473,11 +473,11 @@ export const recipes =
                 'przyprawy'
             ],
             steps: [
-                'Na oliwie podsmaż pokrojoną cebulę i imbir przez 2 minuty.',
-                'Dodaj pokrojonego batata i marchewkę, zalej bulionem.',
+                'Na oliwie podsmaż pokrojoną cebulę i imbir przez 2 minuty.',
+                'Dodaj pokrojonego batata i marchewkę, zalej bulionem.',
                 'Gotuj przez 15–20 minut, aż warzywa będą miękkie.',
-                'Zblenduj na gładki krem, dopraw solą i pieprzem.',
-                'Odstaw do ostudzenia i zapakuj na wynos.'
+                'Zblenduj na gładki krem, dopraw solą i pieprzem.',
+                'Odstaw do ostudzenia i zapakuj na wynos.'
             ],
             zamienniki: {
                 'batat': ['dynia', 'ziemniak'],
@@ -487,19 +487,19 @@ export const recipes =
 
         {
             id: 'makaron-tunczyk-szpinak',
-            title: 'Makaron z tuńczykiem i szpinakiem',
+            title: 'Makaron z tuńczykiem i szpinakiem',
             img: '/makaron-tunczyk-szpinak.png',
             kcal: 420,
             protein_g: 34,
             fat_g: 7,
             carbs_g: 53,
             ingredients: [
-                '80 g makaronu pełnoziarnistego (suchego)',
-                '70 g tuńczyka w sosie własnym',
-                '100 g szpinaku (świeży lub mrożony)',
+                '80 g makaronu pełnoziarnistego (suchego)',
+                '70 g tuńczyka w sosie własnym',
+                '100 g szpinaku (świeży lub mrożony)',
                 '1 ząbek czosnku',
                 '1 łyżeczka oliwy',
-                'sól i pieprz do smaku'
+                'sól i pieprz do smaku'
             ],
             shoppingList: [
                 'makaron pełnoziarnisty',
@@ -511,10 +511,10 @@ export const recipes =
             ],
             steps: [
                 'Ugotuj makaron al dente, odcedź.',
-                'Na oliwie podsmaż pokrojony czosnek przez 1 min.',
-                'Dodaj szpinak i podsmaż.',
-                'Dodaj odsączonego tuńczyka i podgrzej całość przez 2 minuty.',
-                'Wymieszaj z makaronem, dopraw i zapakuj.'
+                'Na oliwie podsmaż pokrojony czosnek przez 1 min.',
+                'Dodaj szpinak i podsmaż.',
+                'Dodaj odsączonego tuńczyka i podgrzej całość przez 2 minuty.',
+                'Wymieszaj z makaronem, dopraw i zapakuj.'
             ],
             zamienniki: {
                 'tuńczyk': ['makrela', 'soczewica', 'ser feta'],
@@ -525,36 +525,36 @@ export const recipes =
 
         {
             id: 'salatka-quinoa-feta',
-            title: 'Sałatka z komosą, ogórkiem i fetą',
+            title: 'Sałatka z komosą, ogórkiem i fetą',
             img: '/salatka-quinoa-feta.png',
             kcal: 390,
             protein_g: 15,
             fat_g: 18,
             carbs_g: 42,
             ingredients: [
-                '70 g komosy ryżowej (quinoa) suchej',
+                '70 g komosy ryżowej (quinoa) suchej',
                 '1 ogórek pokrojony',
-                '100 g pomidorków koktajlowych',
-                '50 g sera feta',
+                '100 g pomidorków koktajlowych',
+                '50 g sera feta',
                 '1 łyżka oliwy',
-                'sok z cytryny lub ocet',
+                'sok z cytryny lub ocet',
                 'sól, pieprz, bazylia'
             ],
             shoppingList: [
                 'quinoa',
                 '1 ogórek',
-                'opakowanie pomidorków koktajlowych',
+                'opakowanie pomidorków koktajlowych',
                 'ser feta',
                 'oliwa',
-                'cytryna lub ocet',
+                'cytryna lub ocet',
                 'przyprawy'
             ],
             steps: [
-                'Ugotuj quinoę zgodnie z instrukcją, ostudź.',
+                'Ugotuj quinoę zgodnie z instrukcją, ostudź.',
                 'Pokrój warzywa.',
-                'W misce połącz komosę, ogórek, pomidorki i fetę.',
-                'Skrop oliwą i sokiem z cytryny, dopraw przyprawami.',
-                'Spakuj do pudełka – świetna na zimno.'
+                'W misce połącz komosę, ogórek, pomidorki i fetę.',
+                'Skrop oliwą i sokiem z cytryny, dopraw przyprawami.',
+                'Spakuj do pudełka – świetna na zimno.'
             ],
             zamienniki: {
                 'quinoa': ['kuskus', 'ryż', 'kasza jaglana'],
@@ -565,22 +565,22 @@ export const recipes =
 
     {
             id: 'stirfry-indyk-warzywa',
-            title: 'Stir-fry z indykiem i warzywami',
+            title: 'Stir-fry z indykiem i warzywami',
             img: '/stirfry-indyk-warzywa.png',
             kcal: 480,
             protein_g: 36,
             fat_g: 25,
             carbs_g: 30,
             ingredients: [
-                '120 g piersi z indyka',
-                '200 g mieszanki warzyw (papryka, marchew, cukinia)',
+                '120 g piersi z indyka',
+                '200 g mieszanki warzyw (papryka, marchew, cukinia)',
                 '2 łyżki sosu sojowego',
                 '1 łyżeczka oleju sezamowego',
                 '1 ząbek czosnku',
-                'sól i pieprz do smaku'
+                'sól i pieprz do smaku'
             ],
             shoppingList: [
-                'pierś z indyka 400 g',
+                'pierś z indyka 400 g',
                 'opakowanie mieszanki warzyw',
                 'sos sojowy',
                 'olej sezamowy',
@@ -588,11 +588,11 @@ export const recipes =
                 'przyprawy'
             ],
             steps: [
-                'Na dużej patelni lub woku rozgrzej olej sezamowy i podsmaż czosnek przez 30 s.',
-                'Dodaj pokrojonego indyka i smaż 5–7 minut.',
-                'Wrzuć warzywa i smaż kolejne 5 minut, mieszając.',
-                'Dodaj sos sojowy, wymieszaj i zdejmij z ognia.',
-                'Zapakuj do pudełka – dobrze smakuje od razu lub lekko ostudzone.'
+                'Na dużej patelni lub woku rozgrzej olej sezamowy i podsmaż czosnek przez 30 s.',
+                'Dodaj pokrojonego indyka i smaż 5–7 minut.',
+                'Wrzuć warzywa i smaż kolejne 5 minut, mieszając.',
+                'Dodaj sos sojowy, wymieszaj i zdejmij z ognia.',
+                'Zapakuj do pudełka – dobrze smakuje od razu lub lekko ostudzone.'
             ],
             zamienniki: {
                 'indyk': ['kurczak', 'tofu', 'krewetki'],
@@ -602,33 +602,33 @@ export const recipes =
 
         {
             id: 'zapiekanka-ziemniaki-brokul',
-            title: 'Zapiekanka z ziemniakami i brokułami',
+            title: 'Zapiekanka z ziemniakami i brokułami',
             img: '/zapiekanka-ziemniaki-brokul.png',
             kcal: 520,
             protein_g: 26,
             fat_g: 20,
             carbs_g: 58,
             ingredients: [
-                '200 g ziemniaków',
-                '150 g brokuła',
-                '50 g sera żółtego',
+                '200 g ziemniaków',
+                '150 g brokuła',
+                '50 g sera żółtego',
                 '2 łyżki jogurtu naturalnego',
                 'sól, pieprz, szczypta gałki muszkatołowej'
             ],
             shoppingList: [
-                'ziemniaki 0,5 kg',
+                'ziemniaki 0,5 kg',
                 '1 brokuł',
-                'ser żółty 200 g',
+                'ser żółty 200 g',
                 'jogurt naturalny',
                 'przyprawy'
             ],
             steps: [
-                'Ugotuj ziemniaki i brokuł na półtwardo, odcedź i ostudź.',
-                'Ziemniaki pokrój w plasterki i ułóż w naczyniu.',
+                'Ugotuj ziemniaki i brokuł na półtwardo, odcedź i ostudź.',
+                'Ziemniaki pokrój w plasterki i ułóż w naczyniu.',
                 'Na ziemniaki wyłóż różyczki brokuła.',
-                'Jogurt dopraw solą, pieprzem i gałką i wyrównaj na wierzchu.',
-                'Posyp tartym serem i zapiekaj w 180°C przez 15 minut.',
-                'Ostudź, podziel na porcje i zapakuj.'
+                'Jogurt dopraw solą, pieprzem i gałką i wyrównaj na wierzchu.',
+                'Posyp tartym serem i zapiekaj w 180°C przez 15 minut.',
+                'Ostudź, podziel na porcje i zapakuj.'
             ],
             zamienniki: {
                 'ziemniaki': ['bataty', 'dynia', 'makaron'],
@@ -639,26 +639,26 @@ export const recipes =
 
         {
             id: 'chili-sin-carne',
-            title: 'Chili sin carne z ryżem',
+            title: 'Chili sin carne z ryżem',
             img: '/chili-sin-carne.png',
             kcal: 500,
             protein_g: 22,
             fat_g: 7,
             carbs_g: 90,
             ingredients: [
-                '150 g czerwonej soczewicy (suchej)',
+                '150 g czerwonej soczewicy (suchej)',
                 '1 papryka pokrojona',
-                '200 g przecieru pomidorowego',
+                '200 g przecieru pomidorowego',
                 'pół cebuli',
                 '1 ząbek czosnku',
                 '1 łyżeczka oliwy',
                 'przyprawy: chili, słodka papryka, sól, pieprz',
-                '80 g ryżu (suchego)'
+                '80 g ryżu (suchego)'
             ],
             shoppingList: [
                 'soczewica czerwona opakowanie',
                 '1 papryka',
-                'przecier pomidorowy 500 g',
+                'przecier pomidorowy 500 g',
                 '1 cebula',
                 'czosnek',
                 'oliwa',
@@ -666,22 +666,22 @@ export const recipes =
                 'ryż (np. basmati)'
             ],
             steps: [
-                'Ugotuj ryż zgodnie z instrukcją i odstaw.',
-                'Na oliwie podsmaż cebulę i czosnek.',
-                'Dodaj paprykę i przyprawy, podsmaż przez 2 minuty.',
-                'Wsyp soczewicę i wlej przecier, gotuj 15–20 minut.',
-                'Podawaj z ryżem, ostudź i zapakuj.'
+                'Ugotuj ryż zgodnie z instrukcją i odstaw.',
+                'Na oliwie podsmaż cebulę i czosnek.',
+                'Dodaj paprykę i przyprawy, podsmaż przez 2 minuty.',
+                'Wsyp soczewicę i wlej przecier, gotuj 15–20 minut.',
+                'Podawaj z ryżem, ostudź i zapakuj.'
             ],
             zamienniki: {
                 'soczewica': ['cieciorka', 'fasola'],
                 'ryż': ['kasza', 'makaron'],
-                'przecier': ['pomidory z puszki', 'passata pomidorowa']
+                'przecier': ['pomidory z puszki', 'passata pomidorowa']
             }
         },
 
         {
             id: 'quesadilla-kurczak-szpinak',
-            title: 'Quesadilla z kurczakiem i szpinakiem',
+            title: 'Quesadilla z kurczakiem i szpinakiem',
             img: '/quesadilla-kurczak-szpinak.png',
             kcal: 450,
             protein_g: 45,
@@ -689,24 +689,24 @@ export const recipes =
             carbs_g: 35,
             ingredients: [
                 '1 tortilla pełnoziarnista',
-                '100 g piersi z kurczaka pokrojonej w paski',
-                '100 g szpinaku',
-                '30 g sera żółtego',
+                '100 g piersi z kurczaka pokrojonej w paski',
+                '100 g szpinaku',
+                '30 g sera żółtego',
                 'sól, pieprz, oregano'
             ],
             shoppingList: [
                 'tortilla pełnoziarnista',
-                'pierś z kurczaka',
+                'pierś z kurczaka',
                 'opakowanie szpinaku',
                 'ser żółty',
                 'przyprawy'
             ],
             steps: [
-                'Usmaż przyprawionego kurczaka na patelni (ok. 5–7 minut).',
-                'Dodaj szpinak i duś.',
-                'Na tortillę nałóż mięso i szpinak, posyp serem.',
-                'Złóż na pół i podsmaż z obu stron (2–3 minuty każdy bok).',
-                'Pokrój na kawałki i zapakuj.'
+                'Usmaż przyprawionego kurczaka na patelni (ok. 5–7 minut).',
+                'Dodaj szpinak i duś.',
+                'Na tortillę nałóż mięso i szpinak, posyp serem.',
+                'Złóż na pół i podsmaż z obu stron (2–3 minuty każdy bok).',
+                'Pokrój na kawałki i zapakuj.'
             ],
             zamienniki: {
                 'tortilla': ['lawasz'],
@@ -717,34 +717,34 @@ export const recipes =
 
         {
             id: 'makaron-kurczak-pieczarki',
-            title: 'Makaron z kurczakiem i pieczarkami',
+            title: 'Makaron z kurczakiem i pieczarkami',
             img: '/makaron-kurczak-pieczarki.png',
             kcal: 500,
             protein_g: 51,
             fat_g: 10,
             carbs_g: 53,
             ingredients: [
-                '80 g makaronu pełnoziarnistego',
-                '120 g piersi z kurczaka pokrojonej',
-                '100 g pieczarek pokrojonych',
+                '80 g makaronu pełnoziarnistego',
+                '120 g piersi z kurczaka pokrojonej',
+                '100 g pieczarek pokrojonych',
                 'pół cebuli',
-                '2 łyżki śmietany 12% lub jogurtu',
+                '2 łyżki śmietany 12% lub jogurtu',
                 'sól, pieprz, czosnek granulowany'
             ],
             shoppingList: [
                 'makaron pełnoziarnisty',
-                'pierś z kurczaka',
+                'pierś z kurczaka',
                 'pieczarki',
                 '1 cebula',
-                'śmietana 12% lub jogurt',
+                'śmietana 12% lub jogurt',
                 'przyprawy'
             ],
             steps: [
                 'Ugotuj makaron al dente.',
-                'Na oliwie podsmaż cebulę i pieczarki, aż się zeszklą.',
-                'Dodaj kurczaka i smaż kilka minut.',
-                'Dodaj śmietanę lub jogurt i dopraw.',
-                'Wymieszaj z makaronem i zapakuj po ostudzeniu.'
+                'Na oliwie podsmaż cebulę i pieczarki, aż się zeszklą.',
+                'Dodaj kurczaka i smaż kilka minut.',
+                'Dodaj śmietanę lub jogurt i dopraw.',
+                'Wymieszaj z makaronem i zapakuj po ostudzeniu.'
             ],
             zamienniki: {
                 'makaron': ['ryż', 'kasza'],
@@ -765,7 +765,7 @@ export const recipes =
                 'pół banana',
                 '1 małe jabłko',
                 'garść szpinaku',
-                '150 ml wody lub napoju roślinnego'
+                '150 ml wody lub napoju roślinnego'
             ],
             shoppingList: [
                 'banany',
@@ -774,10 +774,10 @@ export const recipes =
                 'woda / napój roślinny'
             ],
             steps: [
-                'Obierz banana i pokrój jabłko na kawałki (ze skórką lub bez).',
-                'Do blendera włóż banana, jabłko, szpinak i zalej płynem.',
+                'Obierz banana i pokrój jabłko na kawałki (ze skórką lub bez).',
+                'Do blendera włóż banana, jabłko, szpinak i zalej płynem.',
                 'Zmiksuj do uzyskania gładkiej konsystencji.',
-                'Przelej do szklanki lub bidonu; spożyj od razu lub przechowuj do kilku godzin w lodówce.'
+                'Przelej do szklanki lub bidonu; spożyj od razu lub przechowuj do kilku godzin w lodówce.'
             ],
             zamienniki: {
                 'banan': ['gruszka', 'kiwi'],
@@ -789,7 +789,7 @@ export const recipes =
 
         {
             id: 'kanapka-awokado',
-            title: 'Pełnoziarnista kanapka z awokado',
+            title: 'Pełnoziarnista kanapka z awokado',
             img: '/kanapka-awokado.png',
             kcal: 220,
             protein_g: 6,
@@ -798,8 +798,8 @@ export const recipes =
             ingredients: [
                 '1 kromka chleba pełnoziarnistego',
                 '1/3 awokado',
-                'kilka plasterków pomidora',
-                'szczypta soli i pieprzu'
+                'kilka plasterków pomidora',
+                'szczypta soli i pieprzu'
             ],
             shoppingList: [
                 'chleb pełnoziarnisty',
@@ -808,40 +808,40 @@ export const recipes =
                 'sól, pieprz'
             ],
             steps: [
-                'Awokado rozgnieć widelcem, dopraw solą i pieprzem.',
+                'Awokado rozgnieć widelcem, dopraw solą i pieprzem.',
                 'Posmaruj pastą kromkę chleba.',
                 'Nałóż plasterki pomidora.',
-                'Zapakuj do pudełka lub talerza.'
+                'Zapakuj do pudełka lub talerza.'
             ],
             zamienniki: {
-                'awokado': ['hummus', 'twarożek', 'pasta z fasoli'],
+                'awokado': ['hummus', 'twarożek', 'pasta z fasoli'],
                 'pomidor': ['ogórek', 'rzodkiewka']
             }
         },
 
         {
             id: 'jogurt-miod-orzechy',
-            title: 'Jogurt grecki z miodem i orzechami',
+            title: 'Jogurt grecki z miodem i orzechami',
             img: '/jogurt-miod-orzechy.png',
             kcal: 200,
             protein_g: 12,
             fat_g: 13,
             carbs_g: 11,
             ingredients: [
-                '150 g jogurtu greckiego',
+                '150 g jogurtu greckiego',
                 '1 łyżeczka miodu',
-                '10 g orzechów włoskich lub migdałów'
+                '10 g orzechów włoskich lub migdałów'
             ],
             shoppingList: [
                 'jogurt grecki',
                 'miód',
-                'orzechy włoskie lub migdały'
+                'orzechy włoskie lub migdały'
             ],
             steps: [
                 'Przełóż jogurt do miseczki.',
                 'Skrop miodem.',
-                'Posyp orzechami i ewentualnie lekko wymieszaj.',
-                'Podawaj od razu lub zapakuj.'
+                'Posyp orzechami i ewentualnie lekko wymieszaj.',
+                'Podawaj od razu lub zapakuj.'
             ],
             zamienniki: {
                 'jogurt grecki': ['jogurt naturalny', 'kefir'],
@@ -852,7 +852,7 @@ export const recipes =
 
         {
             id: 'mini-wrap-hummus',
-            title: 'Mini wrap z hummusem i marchewką',
+            title: 'Mini wrap z hummusem i marchewką',
             img: '/mini-wrap-hummus.png',
             kcal: 180,
             protein_g: 5,
@@ -861,7 +861,7 @@ export const recipes =
             ingredients: [
                 '1 mini tortilla pełnoziarnista',
                 '1 łyżka hummusu',
-                '1 mała marchewka (pokrojona w słupki)',
+                '1 mała marchewka (pokrojona w słupki)',
                 'szczypiorek'
             ],
             shoppingList: [
@@ -872,74 +872,74 @@ export const recipes =
             ],
             steps: [
                 'Na tortillę nałóż hummus.',
-                'Dodaj marchew pokrojoną w słupki i szczypiorek.',
-                'Zwiń ciasno, przekrój i zapakuj.'
+                'Dodaj marchew pokrojoną w słupki i szczypiorek.',
+                'Zwiń ciasno, przekrój i zapakuj.'
             ],
             zamienniki: {
-                'hummus': ['pasta z awokado', 'twarożek'],
+                'hummus': ['pasta z awokado', 'twarożek'],
                 'marchewka': ['papryka', 'ogórek']
             }
         },
 
         {
             id: 'placuszki-jaglane',
-            title: 'Placuszki jaglane z owocami',
+            title: 'Placuszki jaglane z owocami',
             img: '/placuszki-jaglane.png',
             kcal: 240,
             protein_g: 11,
             fat_g: 7,
             carbs_g: 31,
             ingredients: [
-                '30 g suchej kaszy jaglanej (2 łyżki)',
+                '30 g suchej kaszy jaglanej (2 łyżki)',
                 '1 jajko',
-                '2 łyżki mleka (ok. 30 ml)',
-                '50 g owoców (np. borówki, maliny)'
+                '2 łyżki mleka (ok. 30 ml)',
+                '50 g owoców (np. borówki, maliny)'
             ],
             shoppingList: [
                 'kasza jaglana',
                 'jajka',
-                'mleko lub napój roślinny',
-                'opakowanie owoców sezonowych'
+                'mleko lub napój roślinny',
+                'opakowanie owoców sezonowych'
             ],
             steps: [
-                'Ugotuj kaszę jaglaną i ostudź.',
-                'W miseczce wymieszaj z jajkiem, mlekiem i owocami.',
-                'Na patelni nieprzywierającej formuj małe placuszki i smaż 2 minuty z każdej strony.',
-                'Ostudź i zapakuj.'
+                'Ugotuj kaszę jaglaną i ostudź.',
+                'W miseczce wymieszaj z jajkiem, mlekiem i owocami.',
+                'Na patelni nieprzywierającej formuj małe placuszki i smaż 2 minuty z każdej strony.',
+                'Ostudź i zapakuj.'
             ],
             zamienniki: {
                 'kasza jaglana': ['płatki owsiane', 'mąka kokosowa'],
                 'mleko': ['napój roślinny', 'jogurt'],
-                'owoce': ['jabłko z cynamonem', 'gruszka']
+                'owoce': ['jabłko z cynamonem', 'gruszka']
             }
         },
 
         {
             id: 'budyn-chia-kakao',
-            title: 'Mini budyń chia z kakao',
+            title: 'Mini budyń chia z kakao',
             img: '/budyn-chia-kakao.png',
             kcal: 200,
             protein_g: 10,
             fat_g: 12,
             carbs_g: 21,
             ingredients: [
-                '2 łyżki nasion chia (ok. 30 g)',
-                '150 ml mleka (krowiego lub roślinnego)',
+                '2 łyżki nasion chia (ok. 30 g)',
+                '150 ml mleka (krowiego lub roślinnego)',
                 '1 łyżeczka kakao',
-                'opcjonalnie: słodzik i owoce do dekoracji'
+                'opcjonalnie: słodzik i owoce do dekoracji'
             ],
             shoppingList: [
                 'nasiona chia',
-                'mleko lub napój roślinny',
+                'mleko lub napój roślinny',
                 'kakao',
                 'słodzik opcjonalnie',
-                'owoce na dekorację'
+                'owoce na dekorację'
             ],
             steps: [
-                'Wymieszaj nasiona chia z mlekiem i kakao w słoiku lub szklance.',
+                'Wymieszaj nasiona chia z mlekiem i kakao w słoiku lub szklance.',
                 'Opcjonalnie dosłódź według uznania.',
-                'Odstaw do lodówki na co najmniej 30 minut (lub na noc).',
-                'Przed podaniem wymieszaj i udekoruj owocami.'
+                'Odstaw do lodówki na co najmniej 30 minut (lub na noc).',
+                'Przed podaniem wymieszaj i udekoruj owocami.'
             ],
             zamienniki: {
                 'nasiona chia': ['siemię lniane', 'płatki owsiane'],
@@ -950,7 +950,7 @@ export const recipes =
 
         {
             id: 'omlet-szpinak-pomidor',
-            title: 'Omlet ze szpinakiem i pomidorem',
+            title: 'Omlet ze szpinakiem i pomidorem',
             img: '/omlet-szpinak-pomidor.png',
             kcal: 330,
             protein_g: 16,
@@ -958,7 +958,7 @@ export const recipes =
             carbs_g: 9,
             ingredients: [
                 '2 jajka',
-                '100 g szpinaku (świeżego lub mrożonego)',
+                '100 g szpinaku (świeżego lub mrożonego)',
                 '1 mały pomidor',
                 '1 łyżeczka oliwy',
                 'sól, pieprz, bazylia'
@@ -971,11 +971,11 @@ export const recipes =
                 'przyprawy (sól, pieprz, bazylia)'
             ],
             steps: [
-                'Rozgrzej oliwę na patelni, dodaj szpinak, smaż aż zmięknie.',
-                'Pokrój pomidora w kostkę, dodaj do szpinaku i podgrzej chwilę.',
-                'W misce roztrzep jajka z solą i pieprzem.',
-                'Wlej masę jajeczną na patelnię, smaż omlet, aż się zetnie, pod koniec złóż na pół.',
-                'Podawaj ciepły lub spakuj do pudełka — smakuje dobrze również po ostudzeniu.'
+                'Rozgrzej oliwę na patelni, dodaj szpinak, smaż aż zmięknie.',
+                'Pokrój pomidora w kostkę, dodaj do szpinaku i podgrzej chwilę.',
+                'W misce roztrzep jajka z solą i pieprzem.',
+                'Wlej masę jajeczną na patelnię, smaż omlet, aż się zetnie, pod koniec złóż na pół.',
+                'Podawaj ciepły lub spakuj do pudełka — smakuje dobrze również po ostudzeniu.'
             ],
             zamienniki: {
                 'szpinak': ['jarmuż', 'rukola'],
@@ -985,21 +985,21 @@ export const recipes =
 
         {
             id: 'salatka-quinoa-ciepla',
-            title: 'Ciepła sałatka z komosą i warzywami',
+            title: 'Ciepła sałatka z komosą i warzywami',
             img: '/salatka-quinoa-ciepla.png',
             kcal: 400,
             protein_g: 12,
             fat_g: 20,
             carbs_g: 51,
             ingredients: [
-                '70 g komosy ryżowej (quinoa)',
+                '70 g komosy ryżowej (quinoa)',
                 'pół cukinii',
                 'pół papryki',
                 '1 łyżka oliwy',
-                'sól, pieprz, sok z cytryny'
+                'sól, pieprz, sok z cytryny'
             ],
             shoppingList: [
-                'quinoa 200 g',
+                'quinoa 200 g',
                 '1 cukinia',
                 '1 papryka',
                 'oliwa',
@@ -1007,10 +1007,10 @@ export const recipes =
                 'przyprawy'
             ],
             steps: [
-                'Ugotuj quinoę zgodnie z instrukcją, odcedź i odstaw.',
+                'Ugotuj quinoę zgodnie z instrukcją, odcedź i odstaw.',
                 'Na patelni rozgrzej oliwę, podsmaż pokrojone warzywa (cukinia, papryka).',
-                'Wymieszaj z komosą, skrop sokiem z cytryny, dopraw solą i pieprzem.',
-                'Podawaj od razu lub zapakuj – pyszna i na ciepło, i na zimno.'
+                'Wymieszaj z komosą, skrop sokiem z cytryny, dopraw solą i pieprzem.',
+                'Podawaj od razu lub zapakuj – pyszna i na ciepło, i na zimno.'
             ],
             zamienniki: {
                 'quinoa': ['ryż', 'kasza jaglana'],
@@ -1021,23 +1021,23 @@ export const recipes =
 
         {
             id: 'gulasz-soczewica-warzywa',
-            title: 'Gulasz z soczewicą i warzywami',
+            title: 'Gulasz z soczewicą i warzywami',
             img: '/gulasz-soczewica-warzywa.png',
             kcal: 450,
             protein_g: 28,
             fat_g: 7,
             carbs_g: 81,
             ingredients: [
-                '100 g czerwonej lub zielonej soczewicy (suchej)',
+                '100 g czerwonej lub zielonej soczewicy (suchej)',
                 '1 marchewka',
                 'pół cebuli',
-                '200 g pomidorów z puszki',
+                '200 g pomidorów z puszki',
                 '1 ząbek czosnku',
                 '1 łyżeczka oleju',
                 'przyprawy: papryka słodka, sól, pieprz'
             ],
             shoppingList: [
-                'soczewica 250 g',
+                'soczewica 250 g',
                 '1 marchewka',
                 '1 cebula',
                 'puszka pomidorów',
@@ -1046,21 +1046,21 @@ export const recipes =
                 'przyprawy'
             ],
             steps: [
-                'Podsmaż na oleju posiekaną cebulę i czosnek.',
-                'Dodaj pokrojoną marchewkę i przyprawy, smaż 2–3 minuty.',
-                'Wsyp soczewicę i dodaj pomidory, duś 15–20 minut aż wszystko zmięknie.',
-                'Dopraw do smaku i zapakuj do pudełka – smaczne od razu lub lekko ostudzone.'
+                'Podsmaż na oleju posiekaną cebulę i czosnek.',
+                'Dodaj pokrojoną marchewkę i przyprawy, smaż 2–3 minuty.',
+                'Wsyp soczewicę i dodaj pomidory, duś 15–20 minut aż wszystko zmięknie.',
+                'Dopraw do smaku i zapakuj do pudełka – smaczne od razu lub lekko ostudzone.'
             ],
             zamienniki: {
                 'soczewica': ['cieciorka', 'fasola'],
                 'marchewka': ['dynia', 'ziemniak'],
-                'pomidor z puszki': ['przecier pomidorowy']
+                'pomidor z puszki': ['przecier pomidorowy']
             }
         },
 
         {
             id: 'tortilla-kurczak-warzywa',
-            title: 'Tortilla z kurczakiem i warzywami',
+            title: 'Tortilla z kurczakiem i warzywami',
             img: '/tortilla-kurczak-warzywa.png',
             kcal: 450,
             protein_g: 38,
@@ -1068,7 +1068,7 @@ export const recipes =
             carbs_g: 36,
             ingredients: [
                 '1 pełnoziarnista tortilla',
-                '100 g piersi z kurczaka',
+                '100 g piersi z kurczaka',
                 'sałata',
                 'pół pomidora',
                 '2 łyżki jogurtu naturalnego',
@@ -1076,16 +1076,16 @@ export const recipes =
             ],
             shoppingList: [
                 'tortilla pełnoziarnista',
-                'pierś z kurczaka',
+                'pierś z kurczaka',
                 'sałata',
                 '1 pomidor',
                 'jogurt naturalny',
                 'przyprawy'
             ],
             steps: [
-                'Usmaż kurczaka pokrojonego w paski z przyprawami (5–7 minut).',
-                'Na tortillę nałóż jogurt, sałatę, pomidora i kurczaka.',
-                'Zwiń tortillę ciasno i zapakuj – świetnie smakuje na zimno i lekko podgrzana.'
+                'Usmaż kurczaka pokrojonego w paski z przyprawami (5–7 minut).',
+                'Na tortillę nałóż jogurt, sałatę, pomidora i kurczaka.',
+                'Zwiń tortillę ciasno i zapakuj – świetnie smakuje na zimno i lekko podgrzana.'
             ],
             zamienniki: {
                 'kurczak': ['indyk', 'tuńczyk', 'tofu'],
@@ -1096,22 +1096,22 @@ export const recipes =
 
         {
             id: 'salatka-tunczyk-warzywa',
-            title: 'Sałatka z tuńczykiem i warzywami',
+            title: 'Sałatka z tuńczykiem i warzywami',
             img: '/salatka-tunczyk-warzywa.png',
             kcal: 380,
             protein_g: 27,
             fat_g: 6,
             carbs_g: 9,
             ingredients: [
-                '1 puszka tuńczyka w sosie własnym',
+                '1 puszka tuńczyka w sosie własnym',
                 'mix sałat',
                 'pół ogórka',
-                '100 g pomidorków koktajlowych',
+                '100 g pomidorków koktajlowych',
                 '1 łyżeczka oliwy',
-                'sól, pieprz, sok z cytryny'
+                'sól, pieprz, sok z cytryny'
             ],
             shoppingList: [
-                'tuńczyk w sosie własnym',
+                'tuńczyk w sosie własnym',
                 'mix sałat',
                 'ogórek',
                 'pomidorki koktajlowe',
@@ -1120,10 +1120,10 @@ export const recipes =
                 'cytryna'
             ],
             steps: [
-                'Odsącz tuńczyka i przełóż do miski.',
+                'Odsącz tuńczyka i przełóż do miski.',
                 'Dodaj pokrojone warzywa.',
-                'Skrop oliwą i sokiem z cytryny, dopraw do smaku.',
-                'Wymieszaj i zapakuj – idealna na zimno.'
+                'Skrop oliwą i sokiem z cytryny, dopraw do smaku.',
+                'Wymieszaj i zapakuj – idealna na zimno.'
             ],
             zamienniki: {
                 'tuńczyk': ['makrela', 'jajko', 'cieciorka'],

@@ -16,10 +16,10 @@ export default function HomePage() {
                 style={{ backgroundImage: "url('/home.jpg')" }}
             >
                 <h1 className="text-6xl font-bold text-white drop-shadow-lg">
-                    Twoja Dieta w Zasięgu Ręki
+                    Twoja Dieta w&nbsp;Zasięgu Ręki
                 </h1>
                 <p className="text-2xl text-white/90 max-w-2xl">
-                    Zdrowe przepisy, AI-asystent i kalkulatory dietetyczne – wszystko w jednym miejscu.
+                    Zdrowe przepisy, AI-asystent i&nbsp;kalkulatory dietetyczne –&nbsp;wszystko w&nbsp;jednym miejscu.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                     <Link
@@ -55,14 +55,14 @@ export default function HomePage() {
                                 O projekcie <span className="text-green-600">Studencka Dieta</span>
                             </h2>
                             <p className="text-lg text-gray-700">
-                                Strona ta została utworzona w ramach projektu społecznego przez studentkę dietetyki
-                                na Uniwersytecie Vizja w Warszawie. Inicjatywa ta ma na celu wspieranie studentów w organizacji
-                                tanich, szybkich i zdrowych posiłków oraz w poprawie nawyków żywieniowych.
+                                Strona ta została utworzona w&nbsp;ramach projektu społecznego przez studentkę dietetyki
+                                na&nbsp;Uniwersytecie Vizja w&nbsp;Warszawie. Inicjatywa ta ma na&nbsp;celu wspieranie studentów w&nbsp;organizacji
+                                tanich, szybkich i&nbsp;zdrowych posiłków oraz&nbsp;w&nbsp;poprawie nawyków żywieniowych.
                             </p>
                             <p className="text-lg text-gray-700">Platforma oferuje:</p>
                             <ul className="list-disc list-inside space-y-2 text-gray-700">
-                                <li>Łatwe i tanie przepisy z wartościami odżywczymi</li>
-                                <li>AI-asystenta generującego przepisy na podstawie składników</li>
+                                <li>Łatwe i tanie przepisy z&nbsp;wartościami odżywczymi</li>
+                                <li>AI-asystenta generującego przepisy na&nbsp;podstawie składników</li>
                                 <li>Praktyczne kalkulatory dietetyczne (BMI, PPM, CPM)</li>
                             </ul>
 
@@ -92,27 +92,27 @@ export default function HomePage() {
                 <FeatureBlock
                     img="/ai-demo.png"
                     title="AI-asystent kuchenny"
-                    text="Wpisz składniki, a my wygenerujemy przepis."
+                    text="Wpisz składniki, a&nbsp;my&nbsp;wygenerujemy przepis."
                 >
                     <Link
                         href="/ai-kitchen"
                         className="px-6 py-3 bg-green-500 text-white rounded-full font-medium hover:bg-green-600 transition inline-block"
                     >
-                        Przejdź do AI-asystenta
+                        Przejdź do&nbsp;asystenta&nbsp;ai
                     </Link>
                 </FeatureBlock>
 
                 <FeatureBlock
                     img="/calculator-demo.png"
                     title="Kalkulatory dietetyczne"
-                    text="Oblicz swoje BMI, PPM i CPM w kilka sekund."
+                    text="Oblicz swoje BMI, PPM i&nbsp;CPM w&nbsp;kilka sekund."
                     reverse
                 >
                     <Link
                         href="/calculators"
                         className="px-6 py-3 bg-green-500 text-white rounded-full font-medium hover:bg-green-600 transition inline-block"
                     >
-                        Przejdź do Kalkulatorów
+                        Przejdź do&nbsp;Kalkulatorów
                     </Link>
                 </FeatureBlock>
             </div>
