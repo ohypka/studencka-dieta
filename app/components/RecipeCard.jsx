@@ -1,4 +1,3 @@
-// app/components/RecipeCard.jsx
 import Link from 'next/link'
 
 export default function RecipeCard({ recipe }) {
@@ -12,9 +11,13 @@ export default function RecipeCard({ recipe }) {
                 alt={recipe.title}
                 className="w-full h-48 object-cover"
             />
-            <div className="p-4">
+            <div className="p-4 space-y-2">
                 <h3 className="text-xl font-semibold">{recipe.title}</h3>
-                <p className="mt-1 text-sm text-gray-600">~{recipe.kcal} kcal</p>
+                {/* Kcal + makro */}
+                <p className="text-sm text-gray-600">
+                    <span className="font-medium">{recipe.kcal} kcal</span> •{' '}
+                    B: {recipe.protein_g} g • T: {recipe.fat_g} g • W: {recipe.carbs_g} g
+                </p>
             </div>
         </Link>
     )

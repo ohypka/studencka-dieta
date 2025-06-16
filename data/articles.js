@@ -1,7 +1,7 @@
 export const articles = [
     {
         id: 'zdrowe-nawyki',
-        title: 'Zdrowe nawyki żywieniowe',
+        title: 'NAJWAŻNIEJSZE zdrowe nawyki żywieniowe',
         icon: '🍎',
         color: 'bg-green-500',
         content: `
@@ -9,7 +9,7 @@ export const articles = [
       <ul>
         <li>Jedz regularnie, co 3–4 godziny</li>
         <li>Pij minimum 2 l wody dziennie</li>
-        <li>Włącz warzywa i owoce do każdego posiłku</li>
+        <li>Włącz warzywa i owoce do każdego posiłku.</li>
       </ul>`
     },
     {
@@ -25,19 +25,6 @@ export const articles = [
         <li>Podziel porcje i zapakuj do pudełek</li>
       </ol>`
     },
-    {
-        id: 'makroskladowe',
-        title: 'Makroskładniki w diecie',
-        icon: '⚖️',
-        color: 'bg-yellow-500',
-        content: `
-      <p>Warto znać rolę białek, tłuszczów i węglowodanów:</p>
-      <ul>
-        <li><strong>Białko</strong> – buduje mięśnie i naprawia tkanki</li>
-        <li><strong>Tłuszcze</strong> – nośnik witamin A, D, E, K</li>
-        <li><strong>Węglowodany</strong> – główne źródło energii</li>
-      </ul>`
-    },
 
     {
         id: 'bialko-zapotrzebowanie',
@@ -48,7 +35,7 @@ export const articles = [
       <p>Białka to podstawowy składnik naszej diety, niezbędny do budowy i naprawy komórek, produkcji enzymów i hormonów, wsparcia układu odpornościowego oraz wielu innych funkcji. Odpowiednia ilość i jakość białka w pożywieniu to fundament zdrowia w każdym wieku.</p>
       
       <h2>1. Czym są białka?</h2>
-      <p>Nazwa „białko” pochodzi od greckiego słowa <em>protos</em> (pierwszy). Białka składają się z aminokwasów, z których 9 (u dorosłych) i 10 (u niemowląt) to aminokwasy egzogenne – musimy je dostarczać z pożywieniem. Białka odpowiadają za syntezę i odnowę tkanek, gojenie ran, pracę układu odpornościowego, transport tlenu (hemoglobina) oraz regulację bilansu wodno-elektrolitowego.</p>
+      <p>Białka składają się z aminokwasów, z których 9 (u dorosłych) i 10 (u niemowląt) to aminokwasy egzogenne – musimy je dostarczać z pożywieniem. Białka odpowiadają za syntezę i odnowę tkanek, gojenie ran, pracę układu odpornościowego, transport tlenu (hemoglobina) oraz regulację bilansu wodno-elektrolitowego.</p>
       
       <h2>2. Budowa białek</h2>
       <p>Aminokwasy łączą się wiązaniami peptydowymi, tworząc dipeptydy, tripeptydy, oligo- i polipeptydy. W organizmie jest 18 aminokwasów; 9 egzogennych i 9 endogennych. Pełnowartościowe białka zawierają wszystkie aminokwasy egzogenne w optymalnych proporcjach.</p>
@@ -105,7 +92,7 @@ export const articles = [
     <p>Pełnoziarniste produkty zbożowe (chleb razowy, kasze, makarony), warzywa i owoce, nasiona roślin strączkowych oraz mleko i przetwory mleczne. :contentReference[oaicite:4]{index=4}</p>
     
     <h3>Zapotrzebowanie</h3>
-    <p>Dla dorosłych minimalne dzienne spożycie to <strong>130 g</strong>, a węglowodany powinny stanowić <strong>45–65 %</strong> całkowitej energii diety. :contentReference[oaicite:5]{index=5}</p>
+    <p>Węglowodany powinny stanowić <strong>45–65 %</strong> całkowitej energii diety. :contentReference[oaicite:5]{index=5}</p>
     
     <h3>Indeks i ładunek glikemiczny</h3>
     <p><strong>IG</strong> klasyfikuje produkty wg szybkości podnoszenia glikemii (niski ≤ 55, średni 56–69, wysoki ≥ 70), a <strong>ŁG</strong> uwzględnia też ilość węglowodanów w porcji (niski 0–10, średni 11–19, wysoki ≥ 20).</p>
@@ -123,12 +110,12 @@ export const articles = [
     <p>Tłuszcze to lipidy obecne w pożywieniu oraz w tkance tłuszczowej organizmu, pełniące rolę magazynu energii, budulca błon komórkowych i nośnika witamin A, D, E i K :contentReference[oaicite:9]{index=9}.</p>
 
     <h2>1. Czym są tłuszcze?</h2>
-    <p>Podstawowym składnikiem tłuszczu są triacyloglicerydy – jedna cząsteczka glicerolu i trzy kwasy tłuszczowe. Tłuszcz zapasowy w organizmie dorosłego stanowi średnio ok. 12 kg i pozwala przetrwać nawet 3 miesiące bez pożywienia. Wchodzące w jego skład lipidy to także ważne składniki błon komórkowych i układu nerwowego (50–60 % masy mózgowia) :contentReference[oaicite:10]{index=10}.</p>
+    <p>Wchodzące w jego skład lipidy to ważne składniki błon komórkowych i układu nerwowego (50–60 % masy mózgowia) :contentReference[oaicite:10]{index=10}.</p>
     <ul>
       <li>9 kcal na 1 g – najbardziej skoncentrowane źródło energii;</li>
-      <li>źródło NNKT (omega-3, omega-6) niezbędnych nienasyconych kwasów tłuszczowych;</li>
-      <li>nośnik i ułatwienie wchłaniania witamin rozpuszczalnych w tłuszczach;</li>
-      <li>źródło steroli (β-sitosterol, cholesterol) wpływających na hormony i metabolizm.</li>
+      <li>źródło (omega-3, omega-6) niezbędnych nienasyconych kwasów tłuszczowych;</li>
+      <li>nośnik i ułatwienie wchłaniania witamin rozpuszczalnych w tłuszczach (A, D, E, K);</li>
+      <li>źródło steroli wpływających na hormony i metabolizm.</li>
     </ul>
     <p class="text-sm italic">:contentReference[oaicite:11]{index=11}</p>
 
@@ -137,7 +124,7 @@ export const articles = [
 
     <h2>3. Konsekwencje nadmiaru i niedoboru</h2>
     <p><strong>Nadmiar:</strong> zwiększone ryzyko nadwagi, otyłości, chorób sercowo-naczyniowych, cukrzycy typu 2, zaburzeń lipidowych oraz nowotworów :contentReference[oaicite:12]{index=12}.</p>
-    <p><strong>Niedobór LC-PUFA (omega-3):</strong> osłabienie funkcji serca, zaburzenia neurologiczne i rozwojowe u dzieci, wyższe ryzyko procesów zapalnych i neurodegeneracyjnych :contentReference[oaicite:13]{index=13}.</p>
+    <p><strong>Niedobór omega-3:</strong> osłabienie funkcji serca, zaburzenia neurologiczne i rozwojowe u dzieci, wyższe ryzyko procesów zapalnych i neurodegeneracyjnych :contentReference[oaicite:13]{index=13}.</p>
 
     <h2>4. Jakie tłuszcze wybierać?</h2>
     <p>Zastępuj tłuszcze zwierzęce (masło, smalec) olejami roślinnymi (rzepakowy, oliwa z oliwek), unikaj olejów tropikalnych (kokosowego, palmowego) oraz tłuszczów trans zawartych w częściowo utwardzanych olejach. Czytaj etykiety produktów – unikanie “częściowo utwardzonych tłuszczów” minimalizuje spożycie izomerów trans :contentReference[oaicite:14]{index=14}.</p>
@@ -155,21 +142,13 @@ export const articles = [
     <p>Zapewnienie odpowiedniego bilansu energetycznego to fundament odżywiania – obejmuje pokrycie podstawowej przemiany materii, termogenezy oraz aktywności fizycznej.</p>
     
     <h2>1. Podstawy i czynniki wpływające</h2>
-    <p>Zapotrzebowanie energetyczne związane jest z podtrzymaniem funkcji życiowych (PPM), termogenezą oraz aktywnością fizyczną. Na poziom EE wpływają masa ciała, skład ciała, wiek, płeć, czynniki genetyczne i hormonalne, stan odżywienia, środowiskowe, leki oraz czynniki psychologiczne. :contentReference[oaicite:9]{index=9}</p>
+    <p>Zapotrzebowanie energetyczne związane jest z podtrzymaniem funkcji życiowych (PPM), termogenezą oraz aktywnością fizyczną. Na jej poziom wpływają masa ciała, skład ciała, wiek, płeć, czynniki genetyczne i hormonalne, stan odżywienia, środowiskowe, leki oraz czynniki psychologiczne. :contentReference[oaicite:9]{index=9}</p>
     
     <h2>2. Bilans energetyczny</h2>
-    <p>Energia spożyta = energia wydatkowana. Bilans dodatni prowadzi do odkładania tkanki tłuszczowej i wzrostu masy ciała, bilans ujemny – do niedożywienia i wyniszczenia organizmu. :contentReference[oaicite:10]{index=10}</p>
+    <p>Energia spożyta a energia wydatkowana - bilans dodatni prowadzi do odkładania tkanki tłuszczowej i wzrostu masy ciała, bilans ujemny – do niedożywienia i wyniszczenia organizmu. :contentReference[oaicite:10]{index=10}</p>
     
-    <h2>3. Całkowity wydatek energetyczny (TEE)</h2>
-    <ul>
-      <li><strong>PPM (BMR):</strong> ok. 50–75% TEE</li>
-      <li><strong>Termogeneza poposiłkowa (DIT):</strong> ok. 10% TEE</li>
-      <li><strong>Aktywność fizyczna (PA):</strong> ok. 20–40% TEE</li>
-    </ul>
-    <p>Czynniki takie jak wzrost, ciąża, urazy czy gorączka podnoszą całkowity wydatek energetyczny. :contentReference[oaicite:11]{index=11}</p>
-    
-    <h2>4. Podstawowa przemiana materii (PPM)</h2>
-    <p>PPM to energia niezbędna do podtrzymania funkcji fizjologicznych w spoczynku (po nocy, na czczo, w komforcie cieplnym). Stanowi 45–70% TEE. Spoczynkowy wydatek energetyczny (SWE) jest ok. 10% wyższy od PPM. :contentReference[oaicite:12]{index=12}</p>
+    <h2>3. Podstawowa przemiana materii (PPM)</h2>
+    <p>PPM to energia niezbędna do podtrzymania funkcji fizjologicznych w spoczynku (po nocy, na czczo, w komforcie cieplnym). :contentReference[oaicite:12]{index=12}</p>
     
     <h2>5. Wzory na PPM</h2>
     <p><strong>Harris–Benedict:</strong><br>
@@ -179,8 +158,8 @@ export const articles = [
        Kobiety: (9,99 × mc) + (6,25 × wzrost) – (4,92 × wiek) – 161<br>
        Mężczyźni: (9,99 × mc) + (6,25 × wzrost) – (4,92 × wiek) + 5 :contentReference[oaicite:14]{index=14}</p>
     
-    <h2>6. Obliczanie TEE</h2>
-    <p>Całkowity wydatek energetyczny oblicza się jako <strong>TEE = PPM × PAL</strong>, gdzie PAL to wskaźnik aktywności fizycznej (1,0–2,5). Alternatywnie przyjmuje się ~45 kcal/kg beztłuszczowej masy ciała (FFM). :contentReference[oaicite:15]{index=15}</p>
+    <h2>6. Obliczanie CPM</h2>
+    <p>Całkowity wydatek energetyczny oblicza się jako <strong>PPM × PAL</strong>, gdzie PAL to wskaźnik aktywności fizycznej (1,0–2,5). :contentReference[oaicite:15]{index=15}</p>
     
     <p class="text-sm italic text-gray-500">
       Źródło:  Gawęcki, J. (2022), „Metody wyznaczania podstawowego i całkowitego zapotrzebowania na energię”, 
@@ -194,7 +173,7 @@ export const articles = [
         icon: '⚖️',
         color: 'bg-red-500',
         content: `
-    <p>Nieprawidłowa masa ciała – zarówno niedowaga, jak i nadwaga czy otyłość – wiąże się z licznymi zagrożeniami zdrowotnymi. Oto najważniejsze wnioski:</p>
+    <p>Nieprawidłowa masa ciała – zarówno niedowaga, jak i nadwaga czy otyłość – wiąże się z licznymi zagrożeniami zdrowotnymi.</p>
 
     <h2>1. Globalne statystyki</h2>
     <ul>
@@ -220,15 +199,7 @@ export const articles = [
       <li>Wyższe ryzyko ≥11 typów nowotworów (m.in. endometrium, przełyku, piersi)</li>
     </ul>
 
-    <h2>4. Kategorie metaboliczne</h2>
-    <ul>
-      <li><strong>NWO (Normal Weight Obesity):</strong> prawidłowy BMI, wysoki % tkanki tłuszczowej – ryzyko chorób sercowo-metabolicznych.</li>
-      <li><strong>MONW (Metabolically Obese Normal Weight):</strong> normalne BMI, ale cechy insulinooporności.</li>
-      <li><strong>MHO (Metabolically Healthy Obese):</strong> otyłość przy zachowanej wrażliwości insulinowej.</li>
-      <li><strong>MUO (Metabolically Unhealthy Obese):</strong> otyłość z insulinoopornością i zwiększonym ryzykiem CVD.</li>
-    </ul>
-
-    <h2>5. Podsumowanie</h2>
+    <h2>4. Podsumowanie</h2>
     <p>Prawidłowa masa ciała jest kluczowa dla zdrowia – zarówno niedowaga, jak i nadwaga czy otyłość mogą prowadzić do poważnych powikłań. Ważne jest monitorowanie wskaźników takich jak BMI, WHR czy FMI oraz wczesna interwencja dietetyczno-ruchowa.</p>
 
     <p class="text-sm italic text-gray-500">
@@ -268,8 +239,8 @@ export const articles = [
     <h2>3. Wskaźnik PAL</h2>
     <p>PAL (Physical Activity Level) = CPM / PPM. WHO/FAO (2003) zaleca:</p>
     <ul>
-      <li>PAL ≥ 1,39 – utrzymanie masy ciała (ok. 30 min umiarkowanej aktywności dziennie).</li>
-      <li>PAL ≥ 1,75 – pełne profity zdrowotne.</li>
+      <li>PAL ≥ 1,39 – ok. 30 min umiarkowanej aktywności dziennie.</li>
+      <li>PAL ≥ 1,75 – gwarantuje pełne profity zdrowotne.</li>
     </ul>
 
     <h2>4. Model FITT</h2>
@@ -349,7 +320,7 @@ export const articles = [
     
     <h2>6. Uważne jedzenie</h2>
     <ul>
-      <li>Słuchaj sygnałów głodu i sytości – jedz powoli, unikaj jedzenia „na stojąco”.</li>
+      <li>Słuchaj sygnałów głodu i sytości – jedz powoli, unikaj jedzenia „na stojąco” i w biegu.</li>
       <li>Spożywaj posiłki w spokojnej atmosferze, bez telefonu czy komputera.</li>
     </ul>
     
@@ -408,10 +379,6 @@ export const articles = [
       <li><strong>Niedobór witamin/minerałów:</strong> anemia, osłabienie kości, zaburzenia neurologiczne.</li>
       <li><strong>Niedostateczne nawodnienie:</strong> trudności w koncentracji, bóle głowy.</li>
     </ul>
-
-    <p class="text-sm italic text-gray-500">
-      Źródło: dr inż. Anna Anyżewska, „Zapotrzebowanie na makroskładniki, witaminy i składniki mineralne, wodę; konsekwencje nieprawidłowego spożycia” :contentReference[oaicite:10]{index=10}
-    </p>
   `
     },
 
@@ -496,7 +463,6 @@ export const articles = [
         <li><a href="https://czytamyetykiety.pl" target="_blank">Jak czytać etykiety produktów spożywczych?</a></li>
         <li><a href="https://ncez.pzh.gov.pl" target="_blank">8 powodów, dla których warto czytać etykiety</a></li>
         <li><a href="https://dietetycy.org.pl" target="_blank">Etykieta żywności. Jakie reguły rządzą etykietowaniem produktów spożywczych?</a></li>
-        <li>Wiedza ogólna z Portalu Gov.pl</li>
       </ul>
     </p>
   `

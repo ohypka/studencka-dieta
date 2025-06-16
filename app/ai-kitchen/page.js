@@ -1,4 +1,3 @@
-// app/ai-kitchen/page.js
 'use client'
 
 import { useState, useRef } from 'react'
@@ -10,11 +9,9 @@ export default function AIDishPage() {
     const [recipe, setRecipe]           = useState(null)
     const pdfRef = useRef()
 
-    // Funkcja: zastępuje spację po krótkich wyrazach niełamliwą spacją
-    const formatText = (text) =>
-        text.replace(/\b(i|w|lub)\s+/gi, (match, p1) => `${p1}\u00A0`)
+    const formatText = text =>
+        text.replace(/\b(i|w|lub)\s+/gi, (m, w) => `${w}\u00A0`)
 
-    // Generowanie przepisu
     async function onSubmit(e) {
         e.preventDefault()
         const res = await fetch('/api/gpt', {
@@ -23,34 +20,62 @@ export default function AIDishPage() {
             body: JSON.stringify({ ingredients })
         })
         const data = await res.json()
+        console.log('GPT response:', data)  // <-- zobacz w konsoli devtools co naprawdę przychodzi
+
         setRecipe({
-            title:        data.title || '',
-            calories:     data.calories || 0,
-            ingredients:  Array.isArray(data.ingredients) ? data.ingredients : [],
-            instructions: Array.isArray(data.instructions) ? data.instructions : []
+            title:         data.title         || '',
+            calories:      data.calories      || 0,
+            proteins:      data.proteins      || 0,
+            fats:          data.fats          || 0,
+            carbohydrates: data.carbohydrates || 0,
+            ingredients:   Array.isArray(data.ingredients)   ? data.ingredients   : [],
+            instructions:  Array.isArray(data.instructions)  ? data.instructions  : [],
+            shoppingList:  Array.isArray(data.shopping_list) ? data.shopping_list : []
         })
     }
 
-    // Pobierz PDF
     async function downloadPdf() {
         if (!pdfRef.current) return
-        const canvas = await html2canvas(pdfRef.current, { scale: 2 })
+        const el = pdfRef.current
+        const origMaxH = el.style.maxHeight
+        const origOv   = el.style.overflow
+        el.style.maxHeight = 'none'
+        el.style.overflow  = 'visible'
+        await new Promise(r => setTimeout(r, 100))
+
+        const canvas = await html2canvas(el, { scale: 2 })
         const imgData = canvas.toDataURL('image/png')
         const pdf = new jsPDF('p', 'mm', 'a4')
-        const w = pdf.internal.pageSize.getWidth()
-        const h = (canvas.height * w) / canvas.width
-        pdf.addImage(imgData, 'PNG', 0, 0, w, h)
-        pdf.save(`${recipe.title}.pdf`)
-    }
+        const pw = pdf.internal.pageSize.getWidth()
+        const ph = pdf.internal.pageSize.getHeight()
+        const props = pdf.getImageProperties(imgData)
+        const ih = (props.height * pw) / props.width
 
-    const ingList   = recipe?.ingredients  ?? []
-    const instrList = recipe?.instructions ?? []
+        let leftover = ih
+        let position = 0
+
+        pdf.addImage(imgData, 'PNG', 0, position, pw, ih)
+        leftover -= ph
+
+        while (leftover > 0) {
+            pdf.addPage()
+            position = -(ih - leftover)
+            pdf.addImage(imgData, 'PNG', 0, position, pw, ih)
+            leftover -= ph
+        }
+
+        pdf.save(`${recipe.title}.pdf`)
+
+        el.style.maxHeight = origMaxH
+        el.style.overflow  = origOv
+    }
 
     return (
         <div className="max-w-3xl mx-auto py-12 px-4 space-y-12">
-            {/* Formularz */}
             <form onSubmit={onSubmit} className="space-y-4">
-                <label className="block text-lg font-medium">Co masz w&nbsp;lodówce?</label>
+                <label className="block text-lg font-medium">
+                    Co masz w&nbsp;lodówce?
+                </label>
                 <textarea
                     value={ingredients}
                     onChange={e => setIngredients(e.target.value)}
@@ -67,44 +92,55 @@ export default function AIDishPage() {
                 </button>
             </form>
 
-            {/* Wyświetlanie przepisu */}
             {recipe && (
                 <>
-                    <div ref={pdfRef} className="bg-white rounded-2xl shadow-lg p-8 space-y-8">
-                        {/* Nagłówek */}
-                        <div className="space-y-2 text-center">
+                    <div
+                        ref={pdfRef}
+                        className="bg-white rounded-2xl shadow-lg p-8 space-y-6 max-h-[80vh] overflow-y-auto"
+                    >
+                        <div className="text-center space-y-2">
                             <h1 className="text-4xl font-extrabold">
                                 {formatText(recipe.title)}
                             </h1>
                             <p className="text-gray-600">
-                                Szacowane kalorie:&nbsp;
-                                <span className="font-semibold">{recipe.calories} kcal</span>
+                                Kalorie: <strong>{recipe.calories} kcal</strong> •
+                                Białka: <strong>{recipe.proteins} g</strong> •
+                                Tłuszcze: <strong>{recipe.fats} g</strong> •
+                                Węglowodany: <strong>{recipe.carbohydrates} g</strong>
                             </p>
                         </div>
                         <hr className="border-gray-300" />
 
-                        {/* Składniki */}
-                        <div className="space-y-4">
-                            <h2 className="text-2xl font-semibold border-b pb-2">Składniki</h2>
-                            <ul className="list-disc list-inside text-gray-700 space-y-1">
-                                {ingList.map((ing, i) => (
+                        <section>
+                            <h2 className="text-2xl font-semibold mb-2">Składniki</h2>
+                            <ul className="list-disc list-inside space-y-1 text-gray-700">
+                                {recipe.ingredients.map((ing, i) => (
                                     <li key={i}>{formatText(ing)}</li>
                                 ))}
                             </ul>
-                        </div>
+                        </section>
 
-                        {/* Instrukcje */}
-                        <div className="space-y-4">
-                            <h2 className="text-2xl font-semibold border-b pb-2">Instrukcje</h2>
-                            <ol className="list-decimal list-inside text-gray-700 space-y-1">
-                                {instrList.map((step, i) => (
+                        {recipe.shoppingList.length > 0 && (
+                            <section>
+                                <h2 className="text-2xl font-semibold mb-2">Lista zakupów</h2>
+                                <ul className="list-disc list-inside space-y-1 text-gray-700">
+                                    {recipe.shoppingList.map((item, i) => (
+                                        <li key={i}>{formatText(item)}</li>
+                                    ))}
+                                </ul>
+                            </section>
+                        )}
+
+                        <section>
+                            <h2 className="text-2xl font-semibold mb-2">Instrukcje</h2>
+                            <ol className="list-decimal list-inside space-y-1 text-gray-700">
+                                {recipe.instructions.map((step, i) => (
                                     <li key={i}>{formatText(step)}</li>
                                 ))}
                             </ol>
-                        </div>
+                        </section>
                     </div>
 
-                    {/* Akcje */}
                     <div className="text-right space-x-4">
                         <button
                             onClick={downloadPdf}
