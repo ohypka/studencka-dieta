@@ -1,4 +1,3 @@
-// app/recipes/[id]/page.jsx
 'use client'
 
 import { useRef } from 'react'
@@ -33,23 +32,23 @@ export default function RecipeDetailPage() {
 
         // Rozwiń kontener, by złapać całość
         const origMaxH = el.style.maxHeight
-        const origOv   = el.style.overflow
+        const origOv = el.style.overflow
         el.style.maxHeight = 'none'
-        el.style.overflow  = 'visible'
+        el.style.overflow = 'visible'
         await new Promise(r => setTimeout(r, 100))
 
         const pdf = new jsPDF('p', 'mm', 'a4')
-        const pageWidth  = pdf.internal.pageSize.getWidth()
+        const pageWidth = pdf.internal.pageSize.getWidth()
         const pageHeight = pdf.internal.pageSize.getHeight()
 
         const canvas = await html2canvas(el, { scale: 2 })
         const imgData = canvas.toDataURL('image/png')
-        const props   = pdf.getImageProperties(imgData)
-        const imgW    = pageWidth
-        const imgH    = (props.height * pageWidth) / props.width
+        const props = pdf.getImageProperties(imgData)
+        const imgW = pageWidth
+        const imgH = (props.height * pageWidth) / props.width
 
         let heightLeft = imgH
-        let position   = 0
+        let position = 0
 
         pdf.addImage(imgData, 'PNG', 0, position, imgW, imgH)
         heightLeft -= pageHeight
@@ -65,18 +64,16 @@ export default function RecipeDetailPage() {
 
         // Przywróć style
         el.style.maxHeight = origMaxH
-        el.style.overflow  = origOv
+        el.style.overflow = origOv
     }
 
     return (
         <div className="container mx-auto py-12 px-4 space-y-6">
-            {/* Ograniczony kontener */}
             <div className="max-w-2xl mx-auto">
                 <div
                     ref={contentRef}
                     className="bg-white rounded-2xl shadow-lg overflow-hidden max-h-[90vh] overflow-y-auto"
                 >
-                    {/* obrazek z zachowaniem proporcji */}
                     <div className="w-full overflow-hidden">
                         <img
                             src={recipe.img}
@@ -101,6 +98,19 @@ export default function RecipeDetailPage() {
                                 ))}
                             </ul>
                         </section>
+
+                        {recipe.zamienniki && (
+                            <section>
+                                <h3 className="text-2xl font-semibold mb-2">Zamienniki produktów:</h3>
+                                <ul className="list-disc list-inside space-y-1 text-gray-700">
+                                    {Object.entries(recipe.zamienniki).map(([produkt, alternatywy]) => (
+                                        <li key={produkt}>
+                                            <span className="font-medium">{produkt}</span>: {alternatywy.join(', ')}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </section>
+                        )}
 
                         <section>
                             <h3 className="text-2xl font-semibold mb-2">Lista zakupów:</h3>
