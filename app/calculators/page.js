@@ -139,7 +139,20 @@ export default function CalculatorsPage() {
                                 <option value="1.83">Wysoka aktywność (PAL 1.71–1.95)</option>
                                 <option value="2.0">Bardzo wysoka aktywność (PAL &gt; 1.95)</option>
                             </select>
+
+                            {/* Dokładny opis interpretacji PAL */}
+                            <div className="mt-4 text-sm text-gray-600">
+                                <h2 className="font-semibold mb-2">Interpretacja współczynnika PAL:</h2>
+                                <ul className="list-disc list-inside space-y-1">
+                                    <li><strong>Brak aktywności (PAL &lt; 1.2):</strong> brak treningów, praca siedząca, stan chorobowy/leżący.</li>
+                                    <li><strong>Lekka aktywność (PAL 1.2–1.55):</strong> praca siedząca + 1–2 treningi tygodniowo.</li>
+                                    <li><strong>Umiarkowana aktywność (PAL 1.55–1.71):</strong> praca siedząca + 3–4 treningi tygodniowo.</li>
+                                    <li><strong>Wysoka aktywność (PAL 1.71–1.95):</strong> praca fizyczna + 3–4 treningi tygodniowo.</li>
+                                    <li><strong>Bardzo wysoka aktywność (PAL &gt; 1.95):</strong> praca fizyczna i intensywne ćwiczenia codzienne lub sport zawodowy.</li>
+                                </ul>
+                            </div>
                         </div>
+
                         {/* Przyciski */}
                         <div className="flex space-x-4">
                             <button
@@ -191,7 +204,7 @@ export default function CalculatorsPage() {
                                     </p>
                                 ) : (
                                     <p>
-                                        <span className="font-semibold">{Math.round(result.cpm - 300)}</span> kcal&nbsp;
+                                        <span className="font-semibold">{Math.round(result.cpm - 500)}</span> kcal&nbsp;
                                         <span className="text-gray-600">– aby schudnąć</span>
                                     </p>
                                 )}
@@ -200,7 +213,7 @@ export default function CalculatorsPage() {
                                     <span className="text-gray-600">– aby utrzymać wagę</span>
                                 </p>
                                 <p>
-                                    <span className="font-semibold">{Math.round(result.cpm + 300)}</span> kcal&nbsp;
+                                    <span className="font-semibold">{Math.round(result.cpm + 500)}</span> kcal&nbsp;
                                     <span className="text-gray-600">– aby przytyć</span>
                                 </p>
                             </div>
