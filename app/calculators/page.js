@@ -8,7 +8,8 @@ export default function CalculatorsPage() {
     const [height, setHeight]     = useState('')
     const [age, setAge]           = useState('')
     const [gender, setGender]     = useState('male')
-    const [activity, setActivity] = useState('1.2')
+    // Domyślna aktywność ustawiona na „Lekka” (środek przedziału PAL 1.2–1.55)
+    const [activity, setActivity] = useState('1.375')
     const [result, setResult]     = useState(null)
 
     const calculate = () => {
@@ -19,19 +20,35 @@ export default function CalculatorsPage() {
         const act  = parseFloat(activity)
         if (!w || !h || !a || !act) return
 
+        // Obliczenie BMI
         const bmiVal = w / (h * h)
 
-        // PPM wg Mifflin–St Jeor
-        const ppmVal = gender === 'male'
-            ? 10 * w + 6.25 * hCm - 5 * a + 5
-            : 10 * w + 6.25 * hCm - 5 * a - 161
+        // PPM: Harris-Benedict jeśli BMI ≤ 30, inaczej Mifflin-St Jeora
+        let ppmVal
+        if (bmiVal <= 30) {
+            // Harris-Benedict:
+            //   mężczyźni: 66.5 + 13.75·waga + 5.003·wzrost(cm) – 6.775·wiek
+            //   kobiety:   655.1 + 9.563·waga + 1.85·wzrost(cm) – 4.676·wiek
+            ppmVal = gender === 'male'
+                ? 66.5  + 13.75  * w   + 5.003  * hCm - 6.775 * a
+                : 655.1 + 9.563   * w   + 1.85   * hCm - 4.676 * a
+        } else {
+            // Mifflin-St Jeora:
+            //   mężczyźni: 10·waga + 6.25·wzrost(cm) – 5·wiek + 5
+            //   kobiety:   10·waga + 6.25·wzrost(cm) – 5·wiek – 161
+            ppmVal = gender === 'male'
+                ? 10 * w + 6.25 * hCm - 5 * a + 5
+                : 10 * w + 6.25 * hCm - 5 * a - 161
+        }
 
+        // CPM = PPM × współczynnik aktywności
         const cpmVal = ppmVal * act
 
         setResult({
             bmi: bmiVal,
             ppm: ppmVal,
-            cpm: cpmVal
+            cpm: cpmVal,
+            act: act
         })
     }
 
@@ -40,7 +57,7 @@ export default function CalculatorsPage() {
         setHeight('')
         setAge('')
         setGender('male')
-        setActivity('1.2')
+        setActivity('1.375')
         setResult(null)
     }
 
@@ -60,8 +77,10 @@ export default function CalculatorsPage() {
             <div className="container mx-auto px-4">
                 <h1 className="text-3xl font-extrabold text-center mb-8">Kalkulatory dietetyczne</h1>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
                     {/* Formularz */}
                     <div className="bg-white rounded-xl shadow p-6 space-y-6">
+                        {/* Płeć */}
                         <div>
                             <label className="block text-sm font-medium text-gray-700 mb-1">Płeć</label>
                             <select
@@ -73,6 +92,7 @@ export default function CalculatorsPage() {
                                 <option value="female">Kobieta</option>
                             </select>
                         </div>
+                        {/* Waga */}
                         <div>
                             <label className="block text-sm font-medium text-gray-700 mb-1">Waga (kg)</label>
                             <input
@@ -83,6 +103,7 @@ export default function CalculatorsPage() {
                                 placeholder="np. 70"
                             />
                         </div>
+                        {/* Wzrost */}
                         <div>
                             <label className="block text-sm font-medium text-gray-700 mb-1">Wzrost (cm)</label>
                             <input
@@ -93,6 +114,7 @@ export default function CalculatorsPage() {
                                 placeholder="np. 175"
                             />
                         </div>
+                        {/* Wiek */}
                         <div>
                             <label className="block text-sm font-medium text-gray-700 mb-1">Wiek (lata)</label>
                             <input
@@ -103,6 +125,7 @@ export default function CalculatorsPage() {
                                 placeholder="np. 25"
                             />
                         </div>
+                        {/* Aktywność fizyczna (PAL wg dietetycy.org.pl) */}
                         <div>
                             <label className="block text-sm font-medium text-gray-700 mb-1">Aktywność fizyczna</label>
                             <select
@@ -110,12 +133,14 @@ export default function CalculatorsPage() {
                                 onChange={e => setActivity(e.target.value)}
                                 className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-400"
                             >
-                                <option value="1.2">Mała (siedzący tryb życia, brak treningów)</option>
-                                <option value="1.375">Lekka (1–3 treningi w tygodniu)</option>
-                                <option value="1.55">Umiarkowana (3–5 treningów w tygodniu)</option>
-                                <option value="1.725">Duża (ciężka praca fizyczna lub intensywne ćwiczenia)</option>
+                                <option value="1.1">Brak aktywności (PAL &lt; 1.2)</option>
+                                <option value="1.375">Lekka aktywność (PAL 1.2–1.55)</option>
+                                <option value="1.63">Umiarkowana aktywność (PAL 1.55–1.71)</option>
+                                <option value="1.83">Wysoka aktywność (PAL 1.71–1.95)</option>
+                                <option value="2.0">Bardzo wysoka aktywność (PAL &gt; 1.95)</option>
                             </select>
                         </div>
+                        {/* Przyciski */}
                         <div className="flex space-x-4">
                             <button
                                 onClick={calculate}
@@ -158,18 +183,24 @@ export default function CalculatorsPage() {
                                 </div>
                             </div>
 
-                            {/* Cele kaloryczne */}
+                            {/* Cele kaloryczne / komunikat */}
                             <div className="space-y-2">
-                                <p>
-                                    <span className="font-semibold">{Math.round(result.cpm - 500)}</span> kcal&nbsp;
-                                    <span className="text-gray-600">– aby schudnąć</span>
-                                </p>
+                                { (result.bmi < 18.5 || result.act <= 1.2) ? (
+                                    <p className="text-center text-red-600">
+                                        Z uwagi na niską masę ciała i/lub niską aktywność fizyczną, Twoje zapotrzebowanie kaloryczne jest bardzo niskie, co może generować wyższe uczucie głodu i problemy z bilansowaniem diety. Zwiększ swoją aktywność w celu zwiększenia zapotrzebowania kalorycznego.
+                                    </p>
+                                ) : (
+                                    <p>
+                                        <span className="font-semibold">{Math.round(result.cpm - 300)}</span> kcal&nbsp;
+                                        <span className="text-gray-600">– aby schudnąć</span>
+                                    </p>
+                                )}
                                 <p>
                                     <span className="font-semibold">{Math.round(result.cpm)}</span> kcal&nbsp;
                                     <span className="text-gray-600">– aby utrzymać wagę</span>
                                 </p>
                                 <p>
-                                    <span className="font-semibold">{Math.round(result.cpm + 500)}</span> kcal&nbsp;
+                                    <span className="font-semibold">{Math.round(result.cpm + 300)}</span> kcal&nbsp;
                                     <span className="text-gray-600">– aby przytyć</span>
                                 </p>
                             </div>
